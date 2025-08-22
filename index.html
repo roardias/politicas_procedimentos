@@ -914,6 +914,370 @@
             border-radius: 4px;
             font-weight: 600;
         }
+
+        /* Estilos para Menu Suspenso */
+        .header-nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-btn {
+            background: linear-gradient(135deg, #DEE653 0%, #f0f565 100%);
+            color: #212121;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px rgba(222, 230, 83, 0.4);
+        }
+
+        .dropdown-btn:hover {
+            background: linear-gradient(135deg, #f0f565 0%, #DEE653 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(222, 230, 83, 0.6);
+        }
+
+        .dropdown-content {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            min-width: 250px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            border: 1px solid #e2e8f0;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            margin-top: 8px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-content a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            color: #374151;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .dropdown-content a:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-content a:hover {
+            background: linear-gradient(135deg, rgba(222, 230, 83, 0.1) 0%, rgba(222, 230, 83, 0.05) 100%);
+            color: #212121;
+            transform: translateX(5px);
+        }
+
+        .dropdown-content a:first-child {
+            border-radius: 12px 12px 0 0;
+        }
+
+        .dropdown-content a:last-child {
+            border-radius: 0 0 12px 12px;
+        }
+
+        .nav-link {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-link:hover {
+            color: #DEE653;
+            transform: translateY(-2px);
+        }
+
+        /* Estilos para Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #FFFFFF 0%, #f8fafc 100%);
+            border-radius: 24px;
+            padding: 4rem 2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border: 1px solid rgba(222, 230, 83, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(222, 230, 83, 0.03) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #212121;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: #64748b;
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+        }
+
+        .global-search-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Estilos para Cards de Políticas */
+        .popular-policies-section {
+            margin-bottom: 3rem;
+        }
+
+        .policies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .policy-card {
+            background: linear-gradient(135deg, #FFFFFF 0%, #f8fafc 100%);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            border: 1px solid rgba(222, 230, 83, 0.2);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .policy-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(222, 230, 83, 0.02) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .policy-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+            border-color: #DEE653;
+        }
+
+        .policy-card.coming-soon {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .policy-card.coming-soon:hover {
+            transform: none;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+
+        .policy-icon {
+            background: linear-gradient(135deg, #DEE653 0%, #f0f565 100%);
+            width: 60px;
+            height: 60px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #212121;
+            box-shadow: 0 4px 15px rgba(222, 230, 83, 0.4);
+            flex-shrink: 0;
+        }
+
+        .policy-content {
+            flex: 1;
+        }
+
+        .policy-content h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #212121;
+            margin-bottom: 0.5rem;
+        }
+
+        .policy-content p {
+            color: #64748b;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+
+        .policy-stats {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.875rem;
+            color: #94a3b8;
+        }
+
+        .policy-stats span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .policy-arrow {
+            color: #DEE653;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .policy-card:hover .policy-arrow {
+            transform: translateX(5px);
+        }
+
+        /* Acesso Rápido */
+        .quick-access-section {
+            margin-bottom: 3rem;
+        }
+
+        .quick-access-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .quick-access-card {
+            background: linear-gradient(135deg, #212121 0%, #333333 100%);
+            color: #FFFFFF;
+            padding: 1.5rem;
+            border-radius: 16px;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(33, 33, 33, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .quick-access-card:hover {
+            background: linear-gradient(135deg, #333333 0%, #555555 100%);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(33, 33, 33, 0.4);
+            color: #FFFFFF;
+        }
+
+        .quick-access-card i {
+            font-size: 1.5rem;
+            color: #DEE653;
+        }
+
+        .quick-access-card span {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        /* Seções de Políticas */
+        .policy-section {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Busca Global */
+        .global-search-results {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 2px solid #0ea5e9;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .global-search-results h3 {
+            color: #0c4a6e;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Botão de Voltar */
+        .back-btn {
+            background: linear-gradient(135deg, #DEE653 0%, #f0f565 100%);
+            color: #212121;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px rgba(222, 230, 83, 0.4);
+        }
+
+        .back-btn:hover {
+            background: linear-gradient(135deg, #f0f565 0%, #DEE653 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(222, 230, 83, 0.6);
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
     </style>
 </head>
 <body>
@@ -924,26 +1288,170 @@
                 <h1>Políticas e Processos</h1>
                 <p>Portal de Acesso aos Colaboradores - Grupo 3SA</p>
             </div>
+            
+            <!-- Menu Suspenso Desktop -->
+            <nav class="header-nav">
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        <i class="fas fa-bars mr-2"></i>
+                        Políticas
+                        <i class="fas fa-chevron-down ml-2"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="showPolicy('emissao-nf')">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            Emissão NF PJ
+                        </a>
+                        <a href="#" onclick="showPolicy('reembolso-prejuizo')">
+                            <i class="fas fa-coins"></i>
+                            Reembolso Prejuízo
+                        </a>
+                        <a href="#" onclick="showPolicy('coming-soon')">
+                            <i class="fas fa-plus-circle"></i>
+                            Mais em breve...
+                        </a>
+                    </div>
+                </div>
+                <a href="#popular-policies" class="nav-link">
+                    <i class="fas fa-star mr-2"></i>Populares
+                </a>
+            </nav>
         </div>
     </header>
 
     <div class="container">
-        <!-- Navegação por Abas -->
-        <div class="tabs-navigation animate-fade-in">
-            <div class="tabs-header">
-                <button class="tab-btn active" onclick="switchTab('emissao-nf')">
-                    <i class="fas fa-file-invoice-dollar"></i>
-                    <span>Emissão NF PJ</span>
-                </button>
-                <button class="tab-btn" onclick="switchTab('reembolso-prejuizo')">
-                    <i class="fas fa-search-dollar"></i>
-                    <span>Reembolso Prejuízo</span>
-                </button>
+        <!-- Hero Section com Busca Global -->
+        <div class="hero-section animate-fade-in">
+            <div class="hero-content">
+                <h2 class="hero-title">
+                    <i class="fas fa-search" style="color: #DEE653; margin-right: 15px;"></i>
+                    Encontre Qualquer Política ou Procedimento
+                </h2>
+                <p class="hero-subtitle">
+                    Digite palavras-chave para encontrar rapidamente a informação que você precisa
+                </p>
+                
+                <!-- Busca Global -->
+                <div class="global-search-container">
+                    <div class="search-box">
+                        <input type="text" id="globalSearchInput" placeholder="Digite: CLT, PJ, nota fiscal, reembolso, desconto, guia..." 
+                               onkeyup="globalSearch()" autocomplete="off">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                    
+                    <!-- Sugestões Populares -->
+                    <div class="search-suggestions">
+                        <div class="suggestion-category">
+                            <h4><i class="fas fa-fire"></i> Buscas populares:</h4>
+                            <div class="suggestion-tags">
+                                <span class="tag" onclick="quickSearch('CLT')">CLT</span>
+                                <span class="tag" onclick="quickSearch('PJ')">PJ</span>
+                                <span class="tag" onclick="quickSearch('nota fiscal')">Nota Fiscal</span>
+                                <span class="tag" onclick="quickSearch('desconto')">Desconto</span>
+                                <span class="tag" onclick="quickSearch('reembolso')">Reembolso</span>
+                                <span class="tag" onclick="quickSearch('bitrix')">Bitrix24</span>
+                                <span class="tag" onclick="quickSearch('financeiro')">Financeiro</span>
+                                <span class="tag" onclick="quickSearch('prazo')">Prazos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- Aba: Emissão NF PJ -->
-        <div id="tab-emissao-nf" class="tab-content active">
+        <!-- Resultados da Busca Global -->
+        <div class="global-search-results" id="globalSearchResults" style="display: none;">
+            <h3><i class="fas fa-bullseye"></i> Resultados Encontrados:</h3>
+            <div id="globalResultsContainer"></div>
+        </div>
+
+        <!-- Políticas Mais Acessadas -->
+        <div class="popular-policies-section" id="popular-policies">
+            <h2 class="section-title">
+                <i class="fas fa-star" style="color: #DEE653; margin-right: 15px;"></i>
+                Políticas Mais Acessadas
+            </h2>
+            <div class="policies-grid">
+                <div class="policy-card" onclick="showPolicy('emissao-nf')">
+                    <div class="policy-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <div class="policy-content">
+                        <h3>Emissão NF PJ</h3>
+                        <p>Fluxo completo para emissão de notas fiscais de prestadores pessoa jurídica</p>
+                        <div class="policy-stats">
+                            <span><i class="fas fa-eye"></i> 1.2k visualizações</span>
+                            <span><i class="fas fa-clock"></i> Atualizado hoje</span>
+                        </div>
+                    </div>
+                    <div class="policy-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="policy-card" onclick="showPolicy('reembolso-prejuizo')">
+                    <div class="policy-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <div class="policy-content">
+                        <h3>Reembolso de Prejuízo</h3>
+                        <p>Tratamento de prejuízos e descontos para CLT e PJ via Bitrix24</p>
+                        <div class="policy-stats">
+                            <span><i class="fas fa-eye"></i> 890 visualizações</span>
+                            <span><i class="fas fa-clock"></i> Atualizado hoje</span>
+                        </div>
+                    </div>
+                    <div class="policy-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="policy-card coming-soon">
+                    <div class="policy-icon">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <div class="policy-content">
+                        <h3>Próximas Políticas</h3>
+                        <p>Mais procedimentos e políticas serão adicionados em breve</p>
+                        <div class="policy-stats">
+                            <span><i class="fas fa-calendar"></i> Em breve</span>
+                        </div>
+                    </div>
+                    <div class="policy-arrow">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Acesso Rápido -->
+        <div class="quick-access-section">
+            <h2 class="section-title">
+                <i class="fas fa-rocket" style="color: #DEE653; margin-right: 15px;"></i>
+                Acesso Rápido
+            </h2>
+            <div class="quick-access-grid">
+                <a href="Fluxo de Pagamento – Prestadores de Serviço PJ.pdf" download class="quick-access-card">
+                    <i class="fas fa-download"></i>
+                    <span>Baixar PDF - NF PJ</span>
+                </a>
+                <a href="https://alldax.bitrix24.com.br/page/g3sa_financeiro/geral/" target="_blank" class="quick-access-card">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>Portal Bitrix24</span>
+                </a>
+                <a href="#" onclick="showPolicy('emissao-nf')" class="quick-access-card">
+                    <i class="fas fa-calculator"></i>
+                    <span>Calculadora NF</span>
+                </a>
+                <a href="#" onclick="showPolicy('reembolso-prejuizo')" class="quick-access-card">
+                    <i class="fas fa-search"></i>
+                    <span>Buscar Procedimento</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Seções de Políticas (ocultas inicialmente) -->
+        <div id="policy-emissao-nf" class="policy-section" style="display: none;">
             <div class="navigation animate-fade-in">
                 <h2 class="nav-title">
                     <i class="fas fa-rocket" style="color: #212121; margin-right: 10px;"></i>
@@ -1113,8 +1621,7 @@
         </div>
         </div>
 
-        <!-- Aba: Reembolso Prejuízo -->
-        <div id="tab-reembolso-prejuizo" class="tab-content">
+        <div id="policy-reembolso-prejuizo" class="policy-section" style="display: none;">
             <!-- Sistema de Busca -->
             <div class="search-section animate-fade-in">
                 <h2 class="search-title">
@@ -1253,23 +1760,244 @@
     </footer>
 
     <script>
-        // Controle de Abas
-        function switchTab(tabId) {
-            // Esconder todas as abas
-            document.querySelectorAll('.tab-content').forEach(tab => {
-                tab.classList.remove('active');
+        // Base de dados global para busca
+        const globalPolicyData = {
+            // Dados da Emissão NF PJ
+            'nota fiscal': {
+                title: 'Emissão de Nota Fiscal PJ',
+                description: 'Fluxo completo para emissão de notas fiscais de prestadores pessoa jurídica com regras de datas e cálculos.',
+                policy: 'emissao-nf',
+                section: 'fluxo-emissao',
+                icon: 'fas fa-file-invoice-dollar'
+            },
+            'PJ': {
+                title: 'Prestadores Pessoa Jurídica',
+                description: 'Processos específicos para PJ: emissão de NF, descontos em pagamento e liquidação de notas.',
+                policy: 'emissao-nf',
+                section: 'option-pj',
+                icon: 'fas fa-building'
+            },
+            'CLT': {
+                title: 'Funcionários CLT',
+                description: 'Processos para CLT: desconto em folha de pagamento, validação pelo RH.',
+                policy: 'reembolso-prejuizo',
+                section: 'option-clt',
+                icon: 'fas fa-user-friends'
+            },
+            'pagamento': {
+                title: 'Datas de Pagamento',
+                description: 'Pagamento das notas fiscais realizado sempre no 1º dia útil de cada mês.',
+                policy: 'emissao-nf',
+                section: 'fluxo-emissao',
+                icon: 'fas fa-calendar-alt'
+            },
+            'dia 25': {
+                title: 'Data de Emissão - Dia 25',
+                description: 'Nota fiscal deve ser emitida no dia 25 do mês corrente, ou antecipada se for fim de semana.',
+                policy: 'emissao-nf',
+                section: 'fluxo-emissao',
+                icon: 'fas fa-calendar-check'
+            },
+            'calculo': {
+                title: 'Cálculo da Nota Fiscal',
+                description: 'Metodologia de cálculo proporcional considerando 30 dias como padrão mensal.',
+                policy: 'emissao-nf',
+                section: 'fluxo-emissao',
+                icon: 'fas fa-calculator'
+            },
+            'desconto': {
+                title: 'Aplicação de Descontos',
+                description: 'RH avalia e define tipo de desconto: CLT (folha), PJ (pagamento) ou guias/reembolsos.',
+                policy: 'reembolso-prejuizo',
+                section: 'step-analise',
+                icon: 'fas fa-minus-circle'
+            },
+            'reembolso': {
+                title: 'Reembolso de Prejuízo',
+                description: 'Tratamento de prejuízos e descontos via tarefas no Bitrix24 com fluxo RH-Financeiro.',
+                policy: 'reembolso-prejuizo',
+                section: 'fluxo-reembolso',
+                icon: 'fas fa-coins'
+            },
+            'bitrix': {
+                title: 'Bitrix24 - Controle de Tarefas',
+                description: 'Plataforma para controle de tarefas, desde identificação até encerramento com comprovantes.',
+                policy: 'reembolso-prejuizo',
+                section: 'step-identificacao',
+                icon: 'fas fa-tasks'
+            },
+            'financeiro': {
+                title: 'Responsabilidades do Financeiro',
+                description: 'Financeiro aplica descontos PJ, executa pagamentos de guias e anexa comprovantes.',
+                policy: 'reembolso-prejuizo',
+                section: 'step-analise',
+                icon: 'fas fa-calculator'
+            },
+            'guia': {
+                title: 'Pagamento de Guia de Imposto',
+                description: 'Para guias de imposto ou reembolsos, RH valida e Financeiro executa com comprovante.',
+                policy: 'reembolso-prejuizo',
+                section: 'option-guia',
+                icon: 'fas fa-money-check-alt'
+            },
+            'prazo': {
+                title: 'Prazos e Datas',
+                description: 'Prazos importantes: emissão dia 25, pagamento 1º dia útil, execução dentro do prazo.',
+                policy: 'emissao-nf',
+                section: 'fluxo-emissao',
+                icon: 'fas fa-clock'
+            }
+        };
+
+        // Função para mostrar política específica
+        function showPolicy(policyId) {
+            // Esconder seções principais
+            document.querySelector('.hero-section').style.display = 'none';
+            document.querySelector('.popular-policies-section').style.display = 'none';
+            document.querySelector('.quick-access-section').style.display = 'none';
+            document.getElementById('globalSearchResults').style.display = 'none';
+            
+            // Esconder todas as políticas
+            document.querySelectorAll('.policy-section').forEach(section => {
+                section.style.display = 'none';
             });
             
-            // Remover active de todos os botões
-            document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.classList.remove('active');
+            // Mostrar política selecionada
+            const policySection = document.getElementById('policy-' + policyId);
+            if (policySection) {
+                policySection.style.display = 'block';
+                
+                // Adicionar botão de voltar
+                addBackButton();
+                
+                // Scroll para o topo
+                window.scrollTo(0, 0);
+            }
+        }
+
+        // Função para voltar à página principal
+        function goHome() {
+            // Mostrar seções principais
+            document.querySelector('.hero-section').style.display = 'block';
+            document.querySelector('.popular-policies-section').style.display = 'block';
+            document.querySelector('.quick-access-section').style.display = 'block';
+            
+            // Esconder todas as políticas
+            document.querySelectorAll('.policy-section').forEach(section => {
+                section.style.display = 'none';
             });
             
-            // Mostrar aba selecionada
-            document.getElementById('tab-' + tabId).classList.add('active');
+            // Remover botão de voltar
+            const backBtn = document.getElementById('backButton');
+            if (backBtn) backBtn.remove();
             
-            // Ativar botão correspondente
-            event.target.classList.add('active');
+            // Scroll para o topo
+            window.scrollTo(0, 0);
+        }
+
+        // Adicionar botão de voltar
+        function addBackButton() {
+            // Remover botão existente se houver
+            const existingBtn = document.getElementById('backButton');
+            if (existingBtn) existingBtn.remove();
+            
+            // Criar novo botão
+            const backBtn = document.createElement('div');
+            backBtn.id = 'backButton';
+            backBtn.innerHTML = `
+                <button onclick="goHome()" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    Voltar ao Início
+                </button>
+            `;
+            backBtn.style.cssText = `
+                position: fixed;
+                top: 100px;
+                left: 20px;
+                z-index: 1000;
+                animation: fadeInLeft 0.5s ease-out;
+            `;
+            
+            document.body.appendChild(backBtn);
+        }
+
+        // Busca global
+        function globalSearch() {
+            const searchTerm = document.getElementById('globalSearchInput').value.toLowerCase().trim();
+            const resultsContainer = document.getElementById('globalResultsContainer');
+            const searchResults = document.getElementById('globalSearchResults');
+            
+            if (searchTerm.length < 2) {
+                searchResults.style.display = 'none';
+                return;
+            }
+            
+            const results = [];
+            
+            // Buscar nos dados globais
+            Object.keys(globalPolicyData).forEach(key => {
+                if (key.toLowerCase().includes(searchTerm) || 
+                    globalPolicyData[key].title.toLowerCase().includes(searchTerm) ||
+                    globalPolicyData[key].description.toLowerCase().includes(searchTerm)) {
+                    results.push({
+                        key: key,
+                        ...globalPolicyData[key]
+                    });
+                }
+            });
+            
+            if (results.length > 0) {
+                searchResults.style.display = 'block';
+                resultsContainer.innerHTML = results.map(result => `
+                    <div class="result-item" onclick="goToResult('${result.policy}', '${result.section}')">
+                        <div class="result-title">
+                            <i class="${result.icon}"></i>
+                            ${result.title}
+                        </div>
+                        <div class="result-description">
+                            ${highlightSearchTerm(result.description, searchTerm)}
+                        </div>
+                    </div>
+                `).join('');
+            } else {
+                searchResults.style.display = 'none';
+            }
+        }
+
+        // Busca rápida por tag
+        function quickSearch(tag) {
+            document.getElementById('globalSearchInput').value = tag;
+            globalSearch();
+        }
+
+        // Ir para resultado da busca
+        function goToResult(policyId, sectionId) {
+            showPolicy(policyId);
+            
+            setTimeout(() => {
+                const element = document.getElementById(sectionId);
+                if (element) {
+                    element.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                    
+                    // Highlight temporário
+                    element.style.background = 'linear-gradient(135deg, rgba(222, 230, 83, 0.2) 0%, rgba(222, 230, 83, 0.1) 100%)';
+                    element.style.transform = 'scale(1.02)';
+                    element.style.transition = 'all 0.5s ease';
+                    
+                    setTimeout(() => {
+                        element.style.background = '';
+                        element.style.transform = '';
+                    }, 2000);
+                }
+            }, 300);
+        }
+
+        function highlightSearchTerm(text, term) {
+            const regex = new RegExp(`(${term})`, 'gi');
+            return text.replace(regex, '<span class="result-highlight">$1</span>');
         }
 
         // Sistema de Busca Inteligente
