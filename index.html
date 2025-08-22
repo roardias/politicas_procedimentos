@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Políticas e Processos - Grupo 3SA</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <style>
         * {
             margin: 0;
@@ -12,17 +19,31 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #FFFFFF;
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
             color: #212121;
             line-height: 1.6;
+            scroll-behavior: smooth;
         }
 
         header {
             background: linear-gradient(135deg, #212121 0%, #333333 100%);
             color: #FFFFFF;
-            padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            backdrop-filter: blur(10px);
+            position: relative;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(222, 230, 83, 0.1) 0%, transparent 50%);
+            pointer-events: none;
         }
 
         .header-content {
@@ -35,8 +56,14 @@
         }
 
         .logo {
-            height: 60px;
+            height: 70px;
             width: auto;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
         }
 
         .header-text {
@@ -44,13 +71,17 @@
         }
 
         .header-text h1 {
-            font-size: 2rem;
+            font-size: 2.2rem;
             margin-bottom: 0.5rem;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         .header-text p {
             color: #DEE653;
             font-size: 1.1rem;
+            font-weight: 500;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
         }
 
         .container {
@@ -60,72 +91,135 @@
         }
 
         .navigation {
-            background-color: #DEE653;
-            border-radius: 12px;
-            padding: 1.5rem;
+            background: linear-gradient(135deg, #DEE653 0%, #f0f565 100%);
+            border-radius: 20px;
+            padding: 2rem;
             margin-bottom: 2rem;
-            box-shadow: 0 4px 15px rgba(222, 230, 83, 0.3);
+            box-shadow: 0 8px 25px rgba(222, 230, 83, 0.4);
+            border: 1px solid rgba(255,255,255,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .navigation::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 50%);
+            pointer-events: none;
         }
 
         .nav-title {
             color: #212121;
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
             text-align: center;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1;
         }
 
         .nav-buttons {
             display: flex;
-            gap: 1rem;
+            gap: 1.5rem;
             justify-content: center;
             flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
         }
 
         .btn {
-            background-color: #212121;
+            background: linear-gradient(135deg, #212121 0%, #333333 100%);
             color: #FFFFFF;
-            padding: 12px 24px;
+            padding: 14px 28px;
             border: none;
-            border-radius: 8px;
+            border-radius: 12px;
             cursor: pointer;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            font-size: 1rem;
             transition: all 0.3s ease;
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(33, 33, 33, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
         }
 
         .btn:hover {
-            background-color: #333333;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            background: linear-gradient(135deg, #333333 0%, #555555 100%);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(33, 33, 33, 0.4);
+        }
+
+        .btn:hover::before {
+            left: 100%;
         }
 
         .btn-download {
-            background-color: #DEE653;
+            background: linear-gradient(135deg, #DEE653 0%, #f0f565 100%);
             color: #212121;
+            box-shadow: 0 4px 15px rgba(222, 230, 83, 0.4);
         }
 
         .btn-download:hover {
-            background-color: #c9d147;
+            background: linear-gradient(135deg, #f0f565 0%, #DEE653 100%);
+            box-shadow: 0 8px 25px rgba(222, 230, 83, 0.6);
         }
 
         .content-section {
-            background-color: #FFFFFF;
-            border-radius: 12px;
-            padding: 2rem;
+            background: linear-gradient(135deg, #FFFFFF 0%, #f8fafc 100%);
+            border-radius: 20px;
+            padding: 2.5rem;
             margin-bottom: 2rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border-left: 4px solid #DEE653;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            border: 1px solid rgba(222, 230, 83, 0.3);
+            border-left: 6px solid #DEE653;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(222, 230, 83, 0.02) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .content-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
         }
 
         .section-title {
             color: #212121;
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            font-weight: bold;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         .flow-content {
@@ -259,6 +353,76 @@
             width: 16px;
             height: 16px;
         }
+
+        /* Animações modernas */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .animate-pulse {
+            animation: pulse 2s infinite;
+        }
+
+        /* Scroll suave personalizado */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: linear-gradient(135deg, #f1f1f1 0%, #e8e8e8 100%);
+            border-radius: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #DEE653 0%, #c9d147 100%);
+            border-radius: 6px;
+            border: 2px solid #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #c9d147 0%, #b8c13d 100%);
+        }
+
+        /* Efeitos modernos */
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .modern-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,252,0.95) 100%);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(222, 230, 83, 0.2);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .modern-card:hover {
+            transform: translateY(-8px) rotate(0.5deg);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border-color: #DEE653;
+        }
     </style>
 </head>
 <body>
@@ -273,26 +437,35 @@
     </header>
 
     <div class="container">
-        <div class="navigation">
-            <h2 class="nav-title">Acesso Rápido</h2>
+        <div class="navigation animate-fade-in">
+            <h2 class="nav-title">
+                <i class="fas fa-rocket" style="color: #212121; margin-right: 10px;"></i>
+                Acesso Rápido
+            </h2>
             <div class="nav-buttons">
                 <a href="#fluxo-emissao" class="btn">
-                    📋 Ver Fluxo Completo
+                    <i class="fas fa-list-alt"></i> Ver Fluxo Completo
                 </a>
                 <a href="Fluxo de Pagamento – Prestadores de Serviço PJ.pdf" download class="btn btn-download">
-                    📥 Baixar PDF
+                    <i class="fas fa-download"></i> Baixar PDF
                 </a>
                 <a href="#imagem-fluxo" class="btn">
-                    🖼️ Ver Imagem do Fluxo
+                    <i class="fas fa-image"></i> Ver Imagem do Fluxo
                 </a>
             </div>
         </div>
 
-        <div class="content-section" id="fluxo-emissao">
-            <h2 class="section-title">Fluxo de Pagamento – Prestadores de Serviço PJ</h2>
+        <div class="content-section animate-fade-in" id="fluxo-emissao">
+            <h2 class="section-title">
+                <i class="fas fa-file-invoice-dollar" style="color: #DEE653; margin-right: 15px;"></i>
+                Fluxo de Pagamento – Prestadores de Serviço PJ
+            </h2>
             
-            <div class="flow-step">
-                <div class="step-title">1. Data de Emissão da Nota Fiscal</div>
+            <div class="flow-step modern-card">
+                <div class="step-title">
+                    <i class="fas fa-calendar-alt" style="color: #DEE653; margin-right: 10px;"></i>
+                    1. Data de Emissão da Nota Fiscal
+                </div>
                 <div class="step-content">
                     • O pagamento das notas fiscais será realizado sempre no <span class="highlight">1º dia útil de cada mês</span>.<br>
                     • Para isso, a nota fiscal deverá ser emitida no <span class="highlight">dia 25 do mês corrente</span>.<br>
@@ -300,8 +473,11 @@
                 </div>
             </div>
 
-            <div class="flow-step">
-                <div class="step-title">2. Regras de Emissão da Nota Fiscal</div>
+            <div class="flow-step modern-card">
+                <div class="step-title">
+                    <i class="fas fa-clipboard-list" style="color: #DEE653; margin-right: 10px;"></i>
+                    2. Regras de Emissão da Nota Fiscal
+                </div>
                 
                 <div class="step-content">
                     <strong>2.1 Prestadores que iniciam atividades entre os dias 01 e 25</strong><br>
@@ -324,8 +500,11 @@
                 </div>
             </div>
 
-            <div class="flow-step">
-                <div class="step-title">3. Metodologia de Cálculo da Nota Fiscal</div>
+            <div class="flow-step modern-card">
+                <div class="step-title">
+                    <i class="fas fa-calculator" style="color: #DEE653; margin-right: 10px;"></i>
+                    3. Metodologia de Cálculo da Nota Fiscal
+                </div>
                 <div class="step-content">
                     O cálculo do valor da nota fiscal será proporcional, considerando <span class="highlight">30 dias como padrão mensal</span>.
                     
@@ -343,12 +522,18 @@
                 </div>
             </div>
 
-            <div class="flow-step">
-                <div class="step-title">4. Fluxo de Envio para o Financeiro</div>
+            <div class="flow-step modern-card">
+                <div class="step-title">
+                    <i class="fas fa-route" style="color: #DEE653; margin-right: 10px;"></i>
+                    4. Fluxo de Envio para o Financeiro
+                </div>
                 <div class="step-content">
                     <div class="actors">
-                        <div class="actor-card">
-                            <div class="actor-title">RH / DP</div>
+                        <div class="actor-card modern-card">
+                            <div class="actor-title">
+                                <i class="fas fa-users" style="color: #DEE653; margin-right: 8px;"></i>
+                                RH / DP
+                            </div>
                             <ul class="actor-tasks">
                                 <li>Abre uma tarefa no Bitrix24 individual para cada prestador PJ, contendo:</li>
                                 <li>• Data de corte</li>
@@ -357,8 +542,11 @@
                             </ul>
                         </div>
 
-                        <div class="actor-card">
-                            <div class="actor-title">Prestador de Serviço PJ</div>
+                        <div class="actor-card modern-card">
+                            <div class="actor-title">
+                                <i class="fas fa-user-tie" style="color: #DEE653; margin-right: 8px;"></i>
+                                Prestador de Serviço PJ
+                            </div>
                             <ul class="actor-tasks">
                                 <li>Acessa a tarefa no Bitrix24</li>
                                 <li>Confere os valores informados</li>
@@ -369,8 +557,11 @@
                             </ul>
                         </div>
 
-                        <div class="actor-card">
-                            <div class="actor-title">Financeiro</div>
+                        <div class="actor-card modern-card">
+                            <div class="actor-title">
+                                <i class="fas fa-calculator" style="color: #DEE653; margin-right: 8px;"></i>
+                                Financeiro
+                            </div>
                             <ul class="actor-tasks">
                                 <li>Recebe todas as NFs e confere com a planilha do RH/DP</li>
                                 <li><strong>Se valores corretos →</strong> lança no Omie e agenda o pagamento no banco</li>
@@ -378,8 +569,11 @@
                             </ul>
                         </div>
 
-                        <div class="actor-card">
-                            <div class="actor-title">Aprovação Final</div>
+                        <div class="actor-card modern-card">
+                            <div class="actor-title">
+                                <i class="fas fa-check-circle" style="color: #DEE653; margin-right: 8px;"></i>
+                                Aprovação Final
+                            </div>
                             <ul class="actor-tasks">
                                 <li>Após o agendamento de todos os pagamentos, o Gestor Financeiro realiza a conferência e informa ao Diretor Financeiro</li>
                                 <li>Diretor Financeiro realiza a aprovação final no banco</li>
@@ -390,11 +584,17 @@
             </div>
         </div>
 
-        <div class="content-section" id="imagem-fluxo">
-            <h2 class="section-title">Fluxograma Visual</h2>
+        <div class="content-section animate-fade-in" id="imagem-fluxo">
+            <h2 class="section-title">
+                <i class="fas fa-project-diagram" style="color: #DEE653; margin-right: 15px;"></i>
+                Fluxograma Visual
+            </h2>
             <div class="flow-image">
-                <img src="fluxo_pagamentos_pj.png" alt="Fluxograma de Pagamentos PJ" />
-                <p style="margin-top: 1rem; color: #666; font-style: italic;">
+                <img src="fluxo_pagamentos_pj.png" alt="Fluxograma de Pagamentos PJ" 
+                     class="modern-card" 
+                     style="max-width: 100%; height: auto; transition: transform 0.3s ease;" />
+                <p style="margin-top: 1.5rem; color: #666; font-style: italic; font-size: 1.1rem;">
+                    <i class="fas fa-info-circle" style="color: #DEE653; margin-right: 8px;"></i>
                     Fluxograma visual do processo de emissão de notas fiscais para prestadores PJ
                 </p>
             </div>
