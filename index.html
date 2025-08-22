@@ -560,6 +560,70 @@
                 font-size: 0.9rem;
                 line-height: 1.5;
             }
+
+            /* Responsividade para abas */
+            .tabs-header {
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .tab-btn {
+                padding: 12px 16px;
+                font-size: 0.9rem;
+            }
+
+            .tab-btn span {
+                font-size: 0.85rem;
+            }
+
+            /* Sistema de busca no mobile */
+            .search-section {
+                padding: 1.5rem;
+            }
+
+            .search-title {
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .search-box input {
+                padding: 16px 20px 16px 50px;
+                font-size: 1rem;
+            }
+
+            .search-icon {
+                left: 16px;
+                font-size: 1rem;
+            }
+
+            .suggestion-tags {
+                justify-content: center;
+            }
+
+            .tag {
+                font-size: 0.8rem;
+                padding: 6px 12px;
+            }
+
+            .search-results {
+                padding: 1.5rem;
+            }
+
+            .search-results h3 {
+                font-size: 1.3rem;
+            }
+
+            .result-item {
+                padding: 1.25rem;
+            }
+
+            .result-title {
+                font-size: 1.1rem;
+            }
+
+            .result-description {
+                font-size: 0.9rem;
+            }
         }
 
         .icon {
@@ -636,6 +700,220 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.15);
             border-color: #DEE653;
         }
+
+        /* Estilos para Sistema de Abas */
+        .tabs-navigation {
+            margin-bottom: 2rem;
+        }
+
+        .tabs-header {
+            display: flex;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-radius: 16px;
+            padding: 8px;
+            gap: 4px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .tab-btn {
+            flex: 1;
+            background: transparent;
+            border: none;
+            padding: 16px 24px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #64748b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .tab-btn:hover {
+            background: rgba(222, 230, 83, 0.1);
+            color: #212121;
+            transform: translateY(-2px);
+        }
+
+        .tab-btn.active {
+            background: linear-gradient(135deg, #DEE653 0%, #f0f565 100%);
+            color: #212121;
+            box-shadow: 0 4px 15px rgba(222, 230, 83, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .tab-btn i {
+            font-size: 1.1rem;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Estilos para Sistema de Busca */
+        .search-section {
+            background: linear-gradient(135deg, #FFFFFF 0%, #f8fafc 100%);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            border: 1px solid rgba(222, 230, 83, 0.3);
+            border-left: 6px solid #DEE653;
+        }
+
+        .search-title {
+            color: #212121;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .search-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .search-box {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 18px 24px 18px 60px;
+            border: 2px solid #e2e8f0;
+            border-radius: 16px;
+            font-size: 1.1rem;
+            font-family: 'Inter', sans-serif;
+            background: #fff;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: #DEE653;
+            box-shadow: 0 0 0 3px rgba(222, 230, 83, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #64748b;
+            font-size: 1.2rem;
+        }
+
+        .search-suggestions {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid #e2e8f0;
+        }
+
+        .suggestion-category h4 {
+            color: #475569;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .suggestion-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background: linear-gradient(135deg, #DEE653 0%, #f0f565 100%);
+            color: #212121;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(222, 230, 83, 0.3);
+        }
+
+        .tag:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 4px 15px rgba(222, 230, 83, 0.4);
+        }
+
+        /* Resultados da Busca */
+        .search-results {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 2px solid #0ea5e9;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .search-results h3 {
+            color: #0c4a6e;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .result-item {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid #DEE653;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .result-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            border-left-color: #0ea5e9;
+        }
+
+        .result-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #212121;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .result-description {
+            color: #64748b;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .result-highlight {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            color: #92400e;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
@@ -650,23 +928,39 @@
     </header>
 
     <div class="container">
-        <div class="navigation animate-fade-in">
-            <h2 class="nav-title">
-                <i class="fas fa-rocket" style="color: #212121; margin-right: 10px;"></i>
-                Acesso Rápido
-            </h2>
-            <div class="nav-buttons">
-                <a href="#fluxo-emissao" class="btn">
-                    <i class="fas fa-list-alt"></i> Ver Fluxo Completo
-                </a>
-                <a href="Fluxo de Pagamento – Prestadores de Serviço PJ.pdf" download class="btn btn-download">
-                    <i class="fas fa-download"></i> Baixar PDF
-                </a>
-                <a href="#imagem-fluxo" class="btn">
-                    <i class="fas fa-image"></i> Ver Imagem do Fluxo
-                </a>
+        <!-- Navegação por Abas -->
+        <div class="tabs-navigation animate-fade-in">
+            <div class="tabs-header">
+                <button class="tab-btn active" onclick="switchTab('emissao-nf')">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <span>Emissão NF PJ</span>
+                </button>
+                <button class="tab-btn" onclick="switchTab('reembolso-prejuizo')">
+                    <i class="fas fa-search-dollar"></i>
+                    <span>Reembolso Prejuízo</span>
+                </button>
             </div>
         </div>
+
+        <!-- Aba: Emissão NF PJ -->
+        <div id="tab-emissao-nf" class="tab-content active">
+            <div class="navigation animate-fade-in">
+                <h2 class="nav-title">
+                    <i class="fas fa-rocket" style="color: #212121; margin-right: 10px;"></i>
+                    Acesso Rápido - Emissão NF PJ
+                </h2>
+                <div class="nav-buttons">
+                    <a href="#fluxo-emissao" class="btn">
+                        <i class="fas fa-list-alt"></i> Ver Fluxo Completo
+                    </a>
+                    <a href="Fluxo de Pagamento – Prestadores de Serviço PJ.pdf" download class="btn btn-download">
+                        <i class="fas fa-download"></i> Baixar PDF
+                    </a>
+                    <a href="#imagem-fluxo" class="btn">
+                        <i class="fas fa-image"></i> Ver Imagem do Fluxo
+                    </a>
+                </div>
+            </div>
 
         <div class="content-section animate-fade-in" id="fluxo-emissao">
             <h2 class="section-title">
@@ -817,6 +1111,140 @@
                 </p>
             </div>
         </div>
+        </div>
+
+        <!-- Aba: Reembolso Prejuízo -->
+        <div id="tab-reembolso-prejuizo" class="tab-content">
+            <!-- Sistema de Busca -->
+            <div class="search-section animate-fade-in">
+                <h2 class="search-title">
+                    <i class="fas fa-search" style="color: #DEE653; margin-right: 15px;"></i>
+                    Buscar Procedimentos - Reembolso de Prejuízo
+                </h2>
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Digite palavras-chave (ex: CLT, PJ, guia, imposto, desconto...)" 
+                               onkeyup="searchProcedures()" autocomplete="off">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                    <div class="search-suggestions" id="searchSuggestions">
+                        <div class="suggestion-category">
+                            <h4><i class="fas fa-tags"></i> Palavras-chave populares:</h4>
+                            <div class="suggestion-tags">
+                                <span class="tag" onclick="searchByTag('CLT')">CLT</span>
+                                <span class="tag" onclick="searchByTag('PJ')">PJ</span>
+                                <span class="tag" onclick="searchByTag('desconto')">Desconto</span>
+                                <span class="tag" onclick="searchByTag('guia')">Guia de Imposto</span>
+                                <span class="tag" onclick="searchByTag('reembolso')">Reembolso</span>
+                                <span class="tag" onclick="searchByTag('financeiro')">Financeiro</span>
+                                <span class="tag" onclick="searchByTag('bitrix')">Bitrix24</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resultados da Busca -->
+            <div class="search-results" id="searchResults" style="display: none;">
+                <h3><i class="fas fa-bullseye"></i> Resultados Encontrados:</h3>
+                <div id="resultsContainer"></div>
+            </div>
+
+            <!-- Fluxo Completo de Reembolso -->
+            <div class="content-section animate-fade-in" id="fluxo-reembolso">
+                <h2 class="section-title">
+                    <i class="fas fa-coins" style="color: #DEE653; margin-right: 15px;"></i>
+                    Fluxo – Tratamento de Prejuízos / Descontos
+                </h2>
+
+                <div class="flow-step modern-card" id="step-identificacao">
+                    <div class="step-title">
+                        <i class="fas fa-exclamation-triangle" style="color: #DEE653; margin-right: 10px;"></i>
+                        1. Identificação do Prejuízo
+                    </div>
+                    <div class="step-content">
+                        <p><strong>O líder imediato identifica o erro/prejuízo</strong> (interno ou a cliente).</p>
+                        <br>
+                        <p><strong>Abre tarefa no Bitrix24</strong>, atribuindo o RH como responsável.</p>
+                        <br>
+                        <p><strong>Na tarefa, o líder deve anexar:</strong></p>
+                        <ul style="margin: 10px 0; padding-left: 20px;">
+                            <li>• Evidências/documentação da falha</li>
+                            <li>• Guia(s) do imposto ou dados bancários para pagamento, se houver</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flow-step modern-card" id="step-analise">
+                    <div class="step-title">
+                        <i class="fas fa-clipboard-check" style="color: #DEE653; margin-right: 10px;"></i>
+                        2. Análise do RH
+                    </div>
+                    <div class="step-content">
+                        <p><strong>O RH avalia a ocorrência</strong> e define o tipo de desconto/pagamento aplicável:</p>
+                        <br>
+                        
+                        <div class="actors">
+                            <div class="actor-card modern-card" id="option-clt">
+                                <div class="actor-title">
+                                    <i class="fas fa-user-friends" style="color: #DEE653; margin-right: 8px;"></i>
+                                    CLT – Desconto em Folha
+                                </div>
+                                <ul class="actor-tasks">
+                                    <li>RH valida e registra o desconto na folha</li>
+                                    <li><strong>Processo é encerrado no próprio RH</strong></li>
+                                </ul>
+                            </div>
+
+                            <div class="actor-card modern-card" id="option-pj">
+                                <div class="actor-title">
+                                    <i class="fas fa-building" style="color: #DEE653; margin-right: 8px;"></i>
+                                    PJ – Desconto em Pagamento
+                                </div>
+                                <ul class="actor-tasks">
+                                    <li>RH valida a responsabilidade</li>
+                                    <li>Reatribui a tarefa ao <strong>Financeiro</strong>, informando valores a descontar</li>
+                                    <li>Financeiro aplica desconto na liquidação da nota do PJ</li>
+                                </ul>
+                            </div>
+
+                            <div class="actor-card modern-card" id="option-guia">
+                                <div class="actor-title">
+                                    <i class="fas fa-money-check-alt" style="color: #DEE653; margin-right: 8px;"></i>
+                                    Pagamento de Guia/Reembolso
+                                </div>
+                                <ul class="actor-tasks">
+                                    <li>RH valida a responsabilidade</li>
+                                    <li>Reatribui tarefa ao <strong>Financeiro</strong> com dados para pagamento</li>
+                                    <li>Financeiro executa pagamento dentro do prazo</li>
+                                    <li>Financeiro anexa comprovante de pagamento</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flow-step modern-card" id="step-encerramento">
+                    <div class="step-title">
+                        <i class="fas fa-check-double" style="color: #DEE653; margin-right: 10px;"></i>
+                        3. Encerramento e Registro
+                    </div>
+                    <div class="step-content">
+                        <p><strong>A tarefa no Bitrix24 só pode ser encerrada quando:</strong></p>
+                        <br>
+                        <div class="example-box">
+                            <p><strong>✅ CLT →</strong> desconto confirmado pelo RH</p>
+                            <p><strong>✅ PJ →</strong> desconto confirmado pelo Financeiro</p>
+                            <p><strong>✅ Guias/transferências →</strong> comprovante de pagamento anexado pelo Financeiro</p>
+                        </div>
+                        <br>
+                        <p class="highlight" style="text-align: center; font-weight: bold;">
+                            📝 Todo o histórico (aprovação, evidências, descontos, pagamentos) permanece arquivado no Bitrix24
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -825,6 +1253,167 @@
     </footer>
 
     <script>
+        // Controle de Abas
+        function switchTab(tabId) {
+            // Esconder todas as abas
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Remover active de todos os botões
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Mostrar aba selecionada
+            document.getElementById('tab-' + tabId).classList.add('active');
+            
+            // Ativar botão correspondente
+            event.target.classList.add('active');
+        }
+
+        // Sistema de Busca Inteligente
+        const searchData = {
+            'CLT': {
+                title: 'Desconto em Folha - CLT',
+                description: 'Para funcionários CLT, o RH valida e registra o desconto diretamente na folha de pagamento. O processo é encerrado no próprio RH.',
+                target: 'option-clt',
+                icon: 'fas fa-user-friends'
+            },
+            'PJ': {
+                title: 'Desconto em Pagamento - PJ',
+                description: 'Para prestadores PJ, o RH valida a responsabilidade e reatribui a tarefa ao Financeiro, que aplica o desconto na liquidação da nota.',
+                target: 'option-pj',
+                icon: 'fas fa-building'
+            },
+            'desconto': {
+                title: 'Aplicação de Descontos',
+                description: 'O RH avalia a ocorrência e define o tipo de desconto aplicável: CLT (folha), PJ (pagamento) ou guias/reembolsos.',
+                target: 'step-analise',
+                icon: 'fas fa-minus-circle'
+            },
+            'guia': {
+                title: 'Pagamento de Guia de Imposto',
+                description: 'Para guias de imposto ou reembolsos, o RH valida e o Financeiro executa o pagamento com comprovante.',
+                target: 'option-guia',
+                icon: 'fas fa-money-check-alt'
+            },
+            'reembolso': {
+                title: 'Reembolso a Cliente',
+                description: 'Processo de reembolso onde o Financeiro executa transferência/pagamento e anexa comprovante na tarefa.',
+                target: 'option-guia',
+                icon: 'fas fa-hand-holding-usd'
+            },
+            'financeiro': {
+                title: 'Responsabilidades do Financeiro',
+                description: 'O Financeiro aplica descontos em PJ, executa pagamentos de guias e anexa comprovantes de todas as transações.',
+                target: 'step-analise',
+                icon: 'fas fa-calculator'
+            },
+            'bitrix': {
+                title: 'Tarefas no Bitrix24',
+                description: 'Todo o fluxo é controlado via tarefas no Bitrix24, desde a identificação até o encerramento com comprovantes.',
+                target: 'step-identificacao',
+                icon: 'fas fa-tasks'
+            },
+            'identificacao': {
+                title: 'Identificação do Prejuízo',
+                description: 'O líder imediato identifica erro/prejuízo e abre tarefa no Bitrix24 anexando evidências.',
+                target: 'step-identificacao',
+                icon: 'fas fa-exclamation-triangle'
+            },
+            'encerramento': {
+                title: 'Encerramento da Tarefa',
+                description: 'A tarefa só é encerrada após confirmação: CLT (RH), PJ (Financeiro), Guias (comprovante anexado).',
+                target: 'step-encerramento',
+                icon: 'fas fa-check-double'
+            },
+            'evidencias': {
+                title: 'Documentação e Evidências',
+                description: 'O líder deve anexar evidências/documentação da falha e dados bancários se necessário.',
+                target: 'step-identificacao',
+                icon: 'fas fa-file-alt'
+            }
+        };
+
+        function searchProcedures() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+            const resultsContainer = document.getElementById('resultsContainer');
+            const searchResults = document.getElementById('searchResults');
+            
+            if (searchTerm.length < 2) {
+                searchResults.style.display = 'none';
+                return;
+            }
+            
+            const results = [];
+            
+            // Buscar nos dados
+            Object.keys(searchData).forEach(key => {
+                if (key.toLowerCase().includes(searchTerm) || 
+                    searchData[key].title.toLowerCase().includes(searchTerm) ||
+                    searchData[key].description.toLowerCase().includes(searchTerm)) {
+                    results.push({
+                        key: key,
+                        ...searchData[key]
+                    });
+                }
+            });
+            
+            if (results.length > 0) {
+                searchResults.style.display = 'block';
+                resultsContainer.innerHTML = results.map(result => `
+                    <div class="result-item" onclick="goToSection('${result.target}')">
+                        <div class="result-title">
+                            <i class="${result.icon}"></i>
+                            ${result.title}
+                        </div>
+                        <div class="result-description">
+                            ${highlightSearchTerm(result.description, searchTerm)}
+                        </div>
+                    </div>
+                `).join('');
+            } else {
+                searchResults.style.display = 'none';
+            }
+        }
+
+        function searchByTag(tag) {
+            document.getElementById('searchInput').value = tag;
+            searchProcedures();
+        }
+
+        function highlightSearchTerm(text, term) {
+            const regex = new RegExp(`(${term})`, 'gi');
+            return text.replace(regex, '<span class="result-highlight">$1</span>');
+        }
+
+        function goToSection(sectionId) {
+            // Garantir que estamos na aba correta
+            switchTab('reembolso-prejuizo');
+            
+            // Scroll suave para a seção
+            setTimeout(() => {
+                const element = document.getElementById(sectionId);
+                if (element) {
+                    element.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                    
+                    // Highlight temporário
+                    element.style.background = 'linear-gradient(135deg, rgba(222, 230, 83, 0.2) 0%, rgba(222, 230, 83, 0.1) 100%)';
+                    element.style.transform = 'scale(1.02)';
+                    element.style.transition = 'all 0.5s ease';
+                    
+                    setTimeout(() => {
+                        element.style.background = '';
+                        element.style.transform = '';
+                    }, 2000);
+                }
+            }, 300);
+        }
+
         // Smooth scrolling para links internos
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -851,6 +1440,12 @@
                 this.style.transform = 'translateY(0)';
                 this.style.boxShadow = 'none';
             });
+        });
+
+        // Inicialização
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ativar primeira aba por padrão
+            document.querySelector('.tab-btn').classList.add('active');
         });
     </script>
 </body>
