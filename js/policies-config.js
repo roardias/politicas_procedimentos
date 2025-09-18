@@ -58,6 +58,12 @@ const POLICIES_CONFIG = {
             ],
             changelog: [
                 {
+                    version: "1.3.0",
+                    date: "2025-09-18",
+                    changes: ["Correção da política: NF emitida dia 25 cobre apenas dias trabalhados até dia 24"],
+                    author: "Sistema"
+                },
+                {
                     version: "1.2.0",
                     date: "2025-08-22",
                     changes: ["Atualização do link do Bitrix24", "Melhoria na descrição dos cálculos"],

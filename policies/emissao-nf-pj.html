@@ -143,7 +143,7 @@
                 <div class="rule-container">
                     <div class="rule-section">
                         <h3><i class="fas fa-play-circle"></i> 2.1 Início entre os dias 01 e 25</h3>
-                        <p>A nota fiscal deve considerar os dias efetivamente trabalhados dentro do período.</p>
+                        <p>A nota fiscal deve considerar os dias efetivamente trabalhados até o dia 24 do mês corrente.</p>
                         
                         <div class="examples-grid">
                             <div class="example-card">
@@ -154,7 +154,7 @@
                                 <div class="example-content">
                                     <p><strong>Início:</strong> 01/07</p>
                                     <p><strong>Emissão NF:</strong> 25/07</p>
-                                    <p><strong>Período:</strong> 25 dias trabalhados (01 a 25)</p>
+                                    <p><strong>Período:</strong> 24 dias trabalhados (01 a 24)</p>
                                 </div>
                             </div>
                             
@@ -166,7 +166,7 @@
                                 <div class="example-content">
                                     <p><strong>Início:</strong> 20/07</p>
                                     <p><strong>Emissão NF:</strong> 25/07</p>
-                                    <p><strong>Período:</strong> 5 dias trabalhados (20 a 25)</p>
+                                    <p><strong>Período:</strong> 5 dias trabalhados (20 a 24)</p>
                                 </div>
                             </div>
                         </div>
@@ -174,7 +174,7 @@
 
                     <div class="rule-section">
                         <h3><i class="fas fa-forward"></i> 2.2 Início a partir do dia 26</h3>
-                        <p>As notas fiscais só deverão ser emitidas no mês seguinte.</p>
+                        <p>As notas fiscais só deverão ser emitidas no mês seguinte, considerando os dias trabalhados até o dia 24.</p>
                         
                         <div class="examples-grid">
                             <div class="example-card">
@@ -185,7 +185,7 @@
                                 <div class="example-content">
                                     <p><strong>Início:</strong> 26/07</p>
                                     <p><strong>Emissão NF:</strong> 25/08</p>
-                                    <p><strong>Período:</strong> 26/07 a 25/08</p>
+                                    <p><strong>Período:</strong> 26/07 a 24/08</p>
                                 </div>
                             </div>
                             
@@ -197,7 +197,7 @@
                                 <div class="example-content">
                                     <p><strong>Início:</strong> 30/07</p>
                                     <p><strong>Emissão NF:</strong> 25/08</p>
-                                    <p><strong>Período:</strong> 30/07 a 25/08</p>
+                                    <p><strong>Período:</strong> 30/07 a 24/08</p>
                                 </div>
                             </div>
                         </div>
@@ -251,7 +251,7 @@
                             <div class="step-number">3</div>
                             <div class="step-content">
                                 <strong>Dias trabalhados:</strong>
-                                <span class="value">25 dias (01 a 25)</span>
+                                <span class="value">24 dias (01 a 24)</span>
                             </div>
                         </div>
                         
@@ -259,7 +259,7 @@
                             <div class="step-number">✓</div>
                             <div class="step-content">
                                 <strong>Valor final da NF:</strong>
-                                <span class="calc">25 × R$ 333,33 = <span class="final-value">R$ 8.333,25</span></span>
+                                <span class="calc">24 × R$ 333,33 = <span class="final-value">R$ 7.999,92</span></span>
                             </div>
                         </div>
                     </div>
@@ -274,7 +274,7 @@
                         </div>
                         <div class="input-group">
                             <label for="diasTrabalhados">Dias Trabalhados:</label>
-                            <input type="number" id="diasTrabalhados" placeholder="25" min="1" max="30">
+                            <input type="number" id="diasTrabalhados" placeholder="24" min="1" max="30">
                         </div>
                         <button class="btn btn-primary" onclick="calcularNF()">
                             <i class="fas fa-calculator"></i> Calcular
