@@ -2,61 +2,41 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Políticas e Processos - Grupo 3SA</title>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome para ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- CSS Modular -->
-    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionando... - Portal de Políticas Grupo 3SA</title>
+    <meta http-equiv="refresh" content="0; url=./Fluxo emissão nota fiscal PJ/">
+    <script>
+        // Redirecionamento imediato via JavaScript
+        window.location.href = "./Fluxo emissão nota fiscal PJ/";
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            color: white;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        .loader {
+            margin: 20px auto;
+            width: 50px;
+            height: 50px;
+            border: 5px solid #334155;
+            border-top: 5px solid #DEE653;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-        <div class="header-content">
-            <img src="Logo_grupo_3sa.png" alt="Logo Grupo 3SA" class="logo">
-            <div class="header-text">
-                    <h1 class="header-title">Políticas e Processos</h1>
-                    <p class="header-subtitle">Portal de Acesso aos Colaboradores - Grupo 3SA</p>
-            </div>
-            
-                <!-- Navegação -->
-            <nav class="header-nav">
-                    <a href="policies/emissao-nf-pj.html" class="nav-link">
-                            <i class="fas fa-file-invoice-dollar"></i>
-                            Emissão NF PJ
-                        </a>
-                    <a href="policies/reembolso-prejuizo.html" class="nav-link">
-                            <i class="fas fa-coins"></i>
-                        Reembolso
-                    </a>
-                <a href="#popular-policies" class="nav-link">
-                        <i class="fas fa-star"></i>
-                        Populares
-                </a>
-            </nav>
-            </div>
-        </div>
-    </header>
-
-    <div class="container">
-        <!-- Conteúdo Principal -->
-        <main id="mainContent">
-            <!-- O conteúdo será carregado dinamicamente pelo JavaScript -->
-        </main>
-                    </div>
-                    
-    <footer class="footer">
-        <p>&copy; 2024 Grupo 3SA - Todos os direitos reservados</p>
-        <p>Portal de Políticas e Processos para Colaboradores • Versão 2.0.0 • Atualizado em 19/12/2024</p>
-    </footer>
-
-    <!-- Scripts Modulares -->
-    <script src="js/policies-config.js"></script>
-    <script src="js/main.js"></script>
+    <h1>Portal de Políticas e Processos - Grupo 3SA</h1>
+    <div class="loader"></div>
+    <p>Redirecionando para o portal principal...</p>
+    <p><a href="./Fluxo emissão nota fiscal PJ/" style="color: #DEE653;">Clique aqui se não foi redirecionado automaticamente</a></p>
 </body>
 </html>
