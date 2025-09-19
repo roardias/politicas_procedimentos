@@ -1,0 +1,37 @@
+# Arquivos temporários do Windows
+Thumbs.db
+*.tmp
+*.temp
+*~
+
+# Logs
+*.log
+
+# Arquivos de sistema
+.DS_Store
+*.DS_Store
+
+# Cache do editor
+.vscode/
+*.swp
+*.swo
+
+# Dependências (se houver)
+node_modules/
+npm-debug.log
+
+# Arquivos de backup
+*.bak
+*.backup
+
+# Arquivos temporários do Office
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# Pasta de cache
+.cache/
+
+# Arquivos de configuração local
+.env
+.env.local

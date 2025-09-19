@@ -1,0 +1,53 @@
+Fluxo – Tratamento de Prejuízos / Descontos
+
+(via tarefas no Bitrix24)
+
+1. Identificação do prejuízo
+
+O líder imediato identifica o erro/prejuízo (interno ou a cliente).
+
+Abre tarefa no Bitrix24, atribuindo o RH como responsável.
+
+Na tarefa, o líder deve anexar:
+
+Evidências/documentação da falha.
+
+Guia(s) do imposto ou dados bancários para pagamento, se houver.
+
+2. Análise do RH
+
+O RH avalia a ocorrência e define o tipo de desconto/pagamento aplicável:
+
+CLT – Desconto em folha
+
+RH valida e registra o desconto na folha.
+
+Processo é encerrado no próprio RH.
+
+PJ – Desconto em pagamento de nota
+
+RH valida a responsabilidade.
+
+Reatribui a tarefa ao Financeiro, informando os valores a descontar.
+
+Financeiro aplica o desconto na liquidação da nota do PJ.
+
+Pagamento de guia de imposto ou transferência (ex.: reembolso a cliente)
+
+RH valida a responsabilidade.
+
+Reatribui a tarefa ao Financeiro, com os dados para pagamento.
+
+Financeiro executa o pagamento dentro do prazo e anexa comprovante.
+
+3. Encerramento e Registro
+
+A tarefa no Bitrix24 só pode ser encerrada quando:
+
+CLT → desconto confirmado pelo RH.
+
+PJ → desconto confirmado pelo Financeiro.
+
+Guias/transferências → comprovante de pagamento anexado pelo Financeiro.
+
+Todo o histórico (aprovação, evidências, descontos, pagamentos) permanece arquivado no Bitrix24.

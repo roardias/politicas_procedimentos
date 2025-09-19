@@ -1,0 +1,39 @@
+Política de Pagamentos
+1. Prazos para Solicitação
+•	Todos os pagamentos previstos para a semana seguinte deverão ser enviados ao Financeiro até quarta-feira da semana anterior.
+•	Solicitações recebidas após esse prazo serão negadas, sendo necessário que a área solicitante abra um pedido de exceção conforme descrito no item 3.
+2. Responsabilidades da Área Solicitante
+•	Toda solicitação deve estar completa, contendo:
+o	Documentos comprobatórios (notas fiscais, contratos, boletos, etc.);
+o	Aprovação do(a) gestor(a) imediato(a);
+o	Aprovação formal da Diretoria.
+•	O simples ato de abrir uma tarefa no sistema não caracteriza cumprimento de prazo. O processo só será aceito pelo Financeiro se estiver pronto e validado.
+•	O controle de juros e multas por atraso é de responsabilidade exclusiva da área solicitante, quando o envio não for feito dentro do prazo ou sem a devida aprovação.
+3. Exceções
+•	Em situações excepcionais, somente a Diretoria poderá solicitar exceção.
+•	O pedido deverá responder às seguintes perguntas:
+1.	Quem falhou?
+2.	O processo falhou ou não existe processo?
+3.	O que será feito para corrigir e evitar repetição?
+4.	Como o problema atual será resolvido de forma imediata?
+•	O pedido de exceção será avaliado pela Diretoria Financeira e Sócios. Se aprovado, o pagamento será processado na data solicitada.
+4. Fluxo Operacional
+1.	Abertura da Tarefa
+o	Área solicitante abre tarefa no Bitrix24 pelo link:
+https://alldax.bitrix24.com.br/page/g3sa_financeiro/geral/
+o	Deve anexar todos os documentos e comprovações necessários.
+2.	Conferência de Documentos
+o	O Financeiro verifica se o processo está completo (prazo + aprovações).
+o	Se sim → realiza o agendamento bancário.
+o	Se não → registra comentário na tarefa informando pendências e orientações.
+o	Se fora do prazo → registra a negativa e orienta a abertura de pedido de exceção.
+3.	Execução do Pagamento
+o	Pagamento agendado no banco conforme prazos.
+o	Após execução, o Financeiro anexa o comprovante de pagamento na mesma tarefa.
+5. Regras de Compliance e Segurança
+•	Nenhum pagamento será efetuado sem aprovação formal da Diretoria.
+•	Solicitações devem respeitar a segregação de funções: quem solicita não pode ser o mesmo que aprova.
+•	O Financeiro atua apenas como executor, cabendo às áreas solicitantes a responsabilidade pela correção e completude das informações.
+•	Alterações de dados bancários de fornecedores só serão aceitas mediante documentação oficial.
+•	Pagamentos em caráter emergencial devem ser devidamente formalizados como exceção e ficarão sujeitos à auditoria interna.
+

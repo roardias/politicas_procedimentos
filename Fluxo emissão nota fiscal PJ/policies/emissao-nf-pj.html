@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emissão de Nota Fiscal PJ - Grupo 3SA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/policy-page.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <img src="../Logo_grupo_3sa.png" alt="Logo Grupo 3SA" class="logo">
+                <div class="header-text">
+                    <h1 class="header-title">Emissão de Nota Fiscal PJ</h1>
+                    <p class="header-subtitle">Versão 1.3.0 • Atualizado em 19/09/2025</p>
+                </div>
+                <div class="header-nav">
+                    <a href="../index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        Voltar ao Início
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Navegação Rápida -->
+        <nav class="policy-nav fade-in">
+            <h2 class="nav-title">
+                <i class="fas fa-rocket"></i>
+                Acesso Rápido
+            </h2>
+            <div class="nav-buttons">
+                <a href="#tipos-fluxo" class="btn">
+                    <i class="fas fa-split"></i> Tipos de Fluxo
+                </a>
+                <a href="#data-emissao" class="btn">
+                    <i class="fas fa-calendar-alt"></i> Data de Emissão
+                </a>
+                <a href="#regras-emissao" class="btn">
+                    <i class="fas fa-clipboard-list"></i> Regras de Emissão
+                </a>
+                <a href="#calculo-nf" class="btn">
+                    <i class="fas fa-calculator"></i> Cálculo da NF
+                </a>
+                <a href="#fluxo-envio" class="btn">
+                    <i class="fas fa-route"></i> Fluxo de Envio
+                </a>
+                <a href="../Fluxo de Pagamento – Prestadores de Serviço PJ.pdf" download class="btn btn-primary">
+                    <i class="fas fa-download"></i> Baixar PDF
+                </a>
+            </div>
+        </nav>
+
+        <!-- Resumo Executivo -->
+        <section class="policy-summary fade-in">
+            <div class="summary-icon">
+                <i class="fas fa-file-invoice-dollar"></i>
+            </div>
+            <div class="summary-content">
+                <h2>Resumo da Política</h2>
+                <p>Esta política estabelece o fluxo completo para emissão de notas fiscais de prestadores pessoa jurídica, definindo datas, regras de cálculo e responsabilidades de cada departamento no processo.</p>
+                <div class="summary-stats">
+                    <div class="stat">
+                        <strong>Frequência:</strong> Mensal
+                    </div>
+                    <div class="stat">
+                        <strong>Prazo:</strong> Até dia 25 do mês
+                    </div>
+                    <div class="stat">
+                        <strong>Departamentos:</strong> RH/DP, Financeiro
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Nova: Tipos de Fluxo -->
+        <section class="policy-section fade-in" id="tipos-fluxo">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-split"></i>
+                </div>
+                <div class="section-title-content">
+                    <h2 class="section-title">Tipos de Fluxo por Data de Contrato</h2>
+                    <span class="section-tag">Importante</span>
+                </div>
+            </div>
+            
+            <div class="policy-content">
+                <div class="highlight-box important">
+                    <h3><i class="fas fa-exclamation-circle"></i> Atenção: Diferentes Fluxos Conforme Data do Contrato</h3>
+                    <p>A partir de setembro de 2025, existem <strong>dois fluxos distintos</strong> para emissão de notas fiscais de prestadores PJ, dependendo da data de assinatura do contrato.</p>
+                </div>
+
+                <div class="flow-comparison">
+                    <div class="flow-card legacy">
+                        <div class="flow-header">
+                            <i class="fas fa-history"></i>
+                            <h3>Fluxo Antigo (Legacy)</h3>
+                            <span class="flow-tag legacy">Contratos até 30/08/2025</span>
+                        </div>
+                        <div class="flow-content">
+                            <h4><i class="fas fa-calendar-check"></i> Para quem se aplica:</h4>
+                            <p>Prestadores PJ com contratos <strong>firmados até 30/08/2025</strong></p>
+                            
+                            <h4><i class="fas fa-coins"></i> Como funciona o pagamento:</h4>
+                            <ul class="feature-list">
+                                <li>
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <div>
+                                        <strong>Período de trabalho:</strong> Recebem pelo mês trabalhado fechado
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-file-invoice"></i>
+                                    <div>
+                                        <strong>Emissão da NF:</strong> No dia 25 do mês (antiga data era dia 18)
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-money-bill-wave"></i>
+                                    <div>
+                                        <strong>Pagamento:</strong> No 1º dia útil do mês seguinte
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="example-box legacy">
+                                <h4><i class="fas fa-lightbulb"></i> Exemplo Prático - Fluxo Antigo</h4>
+                                <p><strong>Trabalho:</strong> Todo o mês de setembro (01/09 a 30/09)</p>
+                                <p><strong>Emissão NF:</strong> Dia 25 de setembro</p>
+                                <p><strong>Pagamento:</strong> 1º dia útil de outubro</p>
+                                <div class="note">
+                                    <i class="fas fa-info-circle"></i>
+                                    <strong>Mudança:</strong> Apenas a data de envio da NF mudou do dia 18 para o dia 25
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flow-card new">
+                        <div class="flow-header">
+                            <i class="fas fa-star"></i>
+                            <h3>Novo Fluxo</h3>
+                            <span class="flow-tag new">A partir de Setembro/2025</span>
+                        </div>
+                        <div class="flow-content">
+                            <h4><i class="fas fa-calendar-plus"></i> Para quem se aplica:</h4>
+                            <p>Prestadores de serviço que <strong>iniciaram suas atividades em setembro de 2025</strong> ou posterior</p>
+                            
+                            <h4><i class="fas fa-cogs"></i> Como funciona:</h4>
+                            <ul class="feature-list">
+                                <li>
+                                    <i class="fas fa-calendar-week"></i>
+                                    <div>
+                                        <strong>Período de corte:</strong> Do dia 25 de um mês até dia 24 do mês seguinte
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-file-invoice-dollar"></i>
+                                    <div>
+                                        <strong>Emissão da NF:</strong> Sempre no dia 25 do mês
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-credit-card"></i>
+                                    <div>
+                                        <strong>Pagamento:</strong> No 1º dia útil do mês seguinte
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="example-box new">
+                                <h4><i class="fas fa-lightbulb"></i> Exemplo Prático - Novo Fluxo</h4>
+                                <p><strong>Trabalho:</strong> De 25/09 até 24/10</p>
+                                <p><strong>Emissão NF:</strong> Dia 25 de outubro</p>
+                                <p><strong>Pagamento:</strong> 1º dia útil de novembro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-box warning">
+                    <h3><i class="fas fa-question-circle"></i> Como identificar qual fluxo seguir?</h3>
+                    <p>Consulte a <strong>data de assinatura do seu contrato</strong>:</p>
+                    <ul>
+                        <li><strong>Contrato assinado até 30/08/2025:</strong> Siga o Fluxo Antigo (Legacy)</li>
+                        <li><strong>Atividades iniciadas em setembro/2025 ou posterior:</strong> Siga o Novo Fluxo</li>
+                    </ul>
+                    <p><small>Em caso de dúvidas, entre em contato com o RH/DP para confirmação.</small></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 1: Data de Emissão -->
+        <section class="policy-section fade-in" id="data-emissao">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <div class="section-title-content">
+                    <h2 class="section-title">1. Data de Emissão da Nota Fiscal</h2>
+                    <span class="section-tag">Fundamental</span>
+                </div>
+            </div>
+            
+            <div class="policy-content">
+                <div class="highlight-box important">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Regra Principal</h3>
+                    <p>O pagamento das notas fiscais será realizado sempre no <strong>1º dia útil de cada mês</strong>.</p>
+                    <p><strong>Importante:</strong> As regras específicas de emissão variam conforme o tipo de fluxo (veja a seção "Tipos de Fluxo por Data de Contrato" acima).</p>
+                </div>
+
+                <div class="content-block">
+                    <h4>Data de Emissão</h4>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fas fa-calendar-check"></i>
+                            <div>
+                                <strong>Dia 25 do mês corrente:</strong> Data padrão para emissão da nota fiscal
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-calendar-times"></i>
+                            <div>
+                                <strong>Finais de semana/feriados:</strong> Antecipar para o primeiro dia útil anterior
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-money-bill-wave"></i>
+                            <div>
+                                <strong>Pagamento:</strong> Sempre no 1º dia útil do mês seguinte
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="example-box">
+                    <h4><i class="fas fa-lightbulb"></i> Exemplo Prático</h4>
+                    <p><strong>Cenário:</strong> Dia 25 de julho cai em um sábado</p>
+                    <p><strong>Ação:</strong> Emitir a nota fiscal na sexta-feira, dia 24 de julho</p>
+                    <p><strong>Pagamento:</strong> Será efetuado no dia 1º de agosto (segunda-feira)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 2: Regras de Emissão -->
+        <section class="policy-section fade-in" id="regras-emissao">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-clipboard-list"></i>
+                </div>
+                <div class="section-title-content">
+                    <h2 class="section-title">2. Regras de Emissão da Nota Fiscal</h2>
+                    <span class="section-tag">Critérios</span>
+                </div>
+            </div>
+            
+            <div class="policy-content">
+                <div class="rule-container">
+                    <div class="rule-section">
+                        <h3><i class="fas fa-play-circle"></i> 2.1 Início entre os dias 01 e 25</h3>
+                        <p>A nota fiscal deve considerar os dias efetivamente trabalhados até o dia 24 do mês corrente.</p>
+                        
+                        <div class="examples-grid">
+                            <div class="example-card">
+                                <div class="example-header">
+                                    <i class="fas fa-user-plus"></i>
+                                    <strong>Exemplo 1</strong>
+                                </div>
+                                <div class="example-content">
+                                    <p><strong>Início:</strong> 01/07</p>
+                                    <p><strong>Emissão NF:</strong> 25/07</p>
+                                    <p><strong>Período:</strong> 24 dias trabalhados (01 a 24)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="example-card">
+                                <div class="example-header">
+                                    <i class="fas fa-user-plus"></i>
+                                    <strong>Exemplo 2</strong>
+                                </div>
+                                <div class="example-content">
+                                    <p><strong>Início:</strong> 20/07</p>
+                                    <p><strong>Emissão NF:</strong> 25/07</p>
+                                    <p><strong>Período:</strong> 5 dias trabalhados (20 a 24)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rule-section">
+                        <h3><i class="fas fa-forward"></i> 2.2 Início a partir do dia 26</h3>
+                        <p>As notas fiscais só deverão ser emitidas no mês seguinte, considerando os dias trabalhados até o dia 24.</p>
+                        
+                        <div class="examples-grid">
+                            <div class="example-card">
+                                <div class="example-header">
+                                    <i class="fas fa-user-plus"></i>
+                                    <strong>Exemplo 1</strong>
+                                </div>
+                                <div class="example-content">
+                                    <p><strong>Início:</strong> 26/07</p>
+                                    <p><strong>Emissão NF:</strong> 25/08</p>
+                                    <p><strong>Período:</strong> 26/07 a 24/08</p>
+                                </div>
+                            </div>
+                            
+                            <div class="example-card">
+                                <div class="example-header">
+                                    <i class="fas fa-user-plus"></i>
+                                    <strong>Exemplo 2</strong>
+                                </div>
+                                <div class="example-content">
+                                    <p><strong>Início:</strong> 30/07</p>
+                                    <p><strong>Emissão NF:</strong> 25/08</p>
+                                    <p><strong>Período:</strong> 30/07 a 24/08</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 3: Cálculo da NF -->
+        <section class="policy-section fade-in" id="calculo-nf">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <div class="section-title-content">
+                    <h2 class="section-title">3. Metodologia de Cálculo da Nota Fiscal</h2>
+                    <span class="section-tag">Fórmula</span>
+                </div>
+            </div>
+            
+            <div class="policy-content">
+                <div class="highlight-box formula">
+                    <h3><i class="fas fa-calculator"></i> Fórmula de Cálculo</h3>
+                    <div class="formula-display">
+                        Valor da NF = (Valor Contratual Mensal ÷ 30) × Dias Trabalhados
+                    </div>
+                    <p><small>* Base de cálculo: 30 dias como padrão mensal</small></p>
+                </div>
+
+                <div class="calculation-example">
+                    <h4><i class="fas fa-chart-line"></i> Exemplo de Cálculo Detalhado</h4>
+                    
+                    <div class="calc-steps">
+                        <div class="calc-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <strong>Valor contratual mensal:</strong>
+                                <span class="value">R$ 10.000,00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="calc-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <strong>Cálculo do valor diário:</strong>
+                                <span class="calc">R$ 10.000,00 ÷ 30 = <span class="value">R$ 333,33/dia</span></span>
+                            </div>
+                        </div>
+                        
+                        <div class="calc-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <strong>Dias trabalhados:</strong>
+                                <span class="value">24 dias (01 a 24)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="calc-step final">
+                            <div class="step-number">✓</div>
+                            <div class="step-content">
+                                <strong>Valor final da NF:</strong>
+                                <span class="calc">24 × R$ 333,33 = <span class="final-value">R$ 7.999,92</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calculator-tool">
+                    <h4><i class="fas fa-tools"></i> Calculadora de NF</h4>
+                    <div class="calculator-form">
+                        <div class="input-group">
+                            <label for="valorMensal">Valor Contratual Mensal (R$):</label>
+                            <input type="number" id="valorMensal" placeholder="10000" step="0.01">
+                        </div>
+                        <div class="input-group">
+                            <label for="diasTrabalhados">Dias Trabalhados:</label>
+                            <input type="number" id="diasTrabalhados" placeholder="24" min="1" max="30">
+                        </div>
+                        <button class="btn btn-primary" onclick="calcularNF()">
+                            <i class="fas fa-calculator"></i> Calcular
+                        </button>
+                        <div class="result" id="resultado"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 4: Fluxo de Envio -->
+        <section class="policy-section fade-in" id="fluxo-envio">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-route"></i>
+                </div>
+                <div class="section-title-content">
+                    <h2 class="section-title">4. Fluxo de Envio para o Financeiro</h2>
+                    <span class="section-tag">Processo</span>
+                </div>
+            </div>
+            
+            <div class="policy-content">
+                <div class="workflow">
+                    <div class="workflow-step">
+                        <div class="step-indicator">
+                            <div class="step-number">1</div>
+                            <div class="step-line"></div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-header">
+                                <h4><i class="fas fa-users"></i> RH / DP</h4>
+                                <span class="step-tag">Preparação</span>
+                            </div>
+                            <div class="step-tasks">
+                                <div class="task">
+                                    <i class="fas fa-plus-circle"></i>
+                                    Abre tarefa individual no Bitrix24 para cada prestador PJ
+                                </div>
+                                <div class="task">
+                                    <i class="fas fa-info-circle"></i>
+                                    Inclui na tarefa: data de corte e valor autorizado
+                                </div>
+                                <div class="task">
+                                    <i class="fas fa-table"></i>
+                                    Envia planilha consolidada no grupo do Bitrix24
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="workflow-step">
+                        <div class="step-indicator">
+                            <div class="step-number">2</div>
+                            <div class="step-line"></div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-header">
+                                <h4><i class="fas fa-user-tie"></i> Prestador de Serviço PJ</h4>
+                                <span class="step-tag">Execução</span>
+                            </div>
+                            <div class="step-tasks">
+                                <div class="task">
+                                    <i class="fas fa-eye"></i>
+                                    Acessa a tarefa no Bitrix24
+                                </div>
+                                <div class="task">
+                                    <i class="fas fa-check-circle"></i>
+                                    Confere os valores informados
+                                </div>
+                                <div class="task">
+                                    <i class="fas fa-file-invoice"></i>
+                                    Emite a nota fiscal
+                                </div>
+                                <div class="task">
+                                    <i class="fas fa-upload"></i>
+                                    Abre tarefa no Bitrix24 anexando a NF
+                                    <a href="https://alldax.bitrix24.com.br/page/g3sa_financeiro/geral/" target="_blank" class="bitrix-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Portal Financeiro Bitrix24
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="workflow-step">
+                        <div class="step-indicator">
+                            <div class="step-number">3</div>
+                            <div class="step-line"></div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-header">
+                                <h4><i class="fas fa-calculator"></i> Financeiro</h4>
+                                <span class="step-tag">Validação</span>
+                            </div>
+                            <div class="step-tasks">
+                                <div class="task">
+                                    <i class="fas fa-search"></i>
+                                    Recebe e confere NFs com a planilha do RH/DP
+                                </div>
+                                <div class="task success">
+                                    <i class="fas fa-check"></i>
+                                    <strong>Se valores corretos:</strong> Lança no Omie e agenda pagamento
+                                </div>
+                                <div class="task error">
+                                    <i class="fas fa-times"></i>
+                                    <strong>Se valores incorretos:</strong> Registra rejeição com justificativa
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="workflow-step">
+                        <div class="step-indicator">
+                            <div class="step-number">4</div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-header">
+                                <h4><i class="fas fa-check-circle"></i> Aprovação Final</h4>
+                                <span class="step-tag">Conclusão</span>
+                            </div>
+                            <div class="step-tasks">
+                                <div class="task">
+                                    <i class="fas fa-user-check"></i>
+                                    Gestor Financeiro realiza conferência final
+                                </div>
+                                <div class="task">
+                                    <i class="fas fa-signature"></i>
+                                    Diretor Financeiro aprova no banco
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fluxograma Visual -->
+        <section class="policy-section fade-in" id="fluxograma">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <div class="section-title-content">
+                    <h2 class="section-title">Fluxograma Visual do Processo</h2>
+                    <span class="section-tag">Diagrama</span>
+                </div>
+            </div>
+            
+            <div class="policy-content">
+                <div class="flowchart-container">
+                    <img src="../fluxo_pagamentos_pj.png" alt="Fluxograma de Pagamentos PJ" class="flowchart-image">
+                    <p class="flowchart-caption">
+                        <i class="fas fa-info-circle"></i>
+                        Representação visual completa do processo de emissão de notas fiscais para prestadores PJ
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Informações Adicionais -->
+        <section class="policy-footer fade-in">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3><i class="fas fa-info-circle"></i> Informações da Política</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <strong>Versão:</strong> 1.3.0
+                        </div>
+                        <div class="info-item">
+                            <strong>Última Atualização:</strong> 19/09/2025
+                        </div>
+                        <div class="info-item">
+                            <strong>Próxima Revisão:</strong> 19/03/2026
+                        </div>
+                        <div class="info-item">
+                            <strong>Responsável:</strong> Departamento Financeiro
+                        </div>
+                        <div class="info-item">
+                            <strong>Aprovado por:</strong> Diretoria Financeira
+                        </div>
+                        <div class="info-item">
+                            <strong>Categoria:</strong> Políticas Financeiras
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-actions">
+                    <a href="../Fluxo de Pagamento – Prestadores de Serviço PJ.pdf" download class="btn btn-primary">
+                        <i class="fas fa-download"></i> Baixar PDF
+                    </a>
+                    <button class="btn" onclick="window.print()">
+                        <i class="fas fa-print"></i> Imprimir
+                    </button>
+                    <a href="../index.html" class="btn">
+                        <i class="fas fa-home"></i> Voltar ao Início
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Grupo 3SA - Todos os direitos reservados</p>
+        <p>Portal de Políticas e Processos para Colaboradores</p>
+    </footer>
+
+    <script>
+        // Calculadora de NF
+        function calcularNF() {
+            const valorMensal = parseFloat(document.getElementById('valorMensal').value);
+            const diasTrabalhados = parseInt(document.getElementById('diasTrabalhados').value);
+            const resultado = document.getElementById('resultado');
+            
+            if (!valorMensal || !diasTrabalhados || valorMensal <= 0 || diasTrabalhados <= 0 || diasTrabalhados > 30) {
+                resultado.innerHTML = '<div class="error"><i class="fas fa-exclamation-triangle"></i> Por favor, insira valores válidos.</div>';
+                return;
+            }
+            
+            const valorDiario = valorMensal / 30;
+            const valorNF = valorDiario * diasTrabalhados;
+            
+            resultado.innerHTML = `
+                <div class="success">
+                    <h4><i class="fas fa-check-circle"></i> Resultado do Cálculo</h4>
+                    <p><strong>Valor diário:</strong> R$ ${valorDiario.toFixed(2)}</p>
+                    <p><strong>Dias trabalhados:</strong> ${diasTrabalhados}</p>
+                    <p class="final-result"><strong>Valor da NF:</strong> R$ ${valorNF.toFixed(2)}</p>
+                </div>
+            `;
+        }
+
+        // Smooth scrolling para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animações ao scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.policy-section, .policy-nav, .policy-summary').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

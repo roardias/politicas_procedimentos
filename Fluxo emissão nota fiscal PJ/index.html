@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Políticas e Processos - Grupo 3SA</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS Modular -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <img src="Logo_grupo_3sa.png" alt="Logo Grupo 3SA" class="logo">
+                <div class="header-text">
+                    <h1 class="header-title">Políticas e Processos</h1>
+                    <p class="header-subtitle">Portal de Acesso aos Colaboradores - Grupo 3SA</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Seção de Busca -->
+        <section class="search-section">
+            <div class="search-container">
+                <h2>Buscar Políticas</h2>
+                <p>Encontre rapidamente as políticas e procedimentos que você precisa</p>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Digite: PJ, nota fiscal, reembolso, pagamentos..." class="search-input">
+                    <button class="search-btn" onclick="performSearch()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </section>
+
+        <!-- Políticas Disponíveis -->
+        <section class="policies-section">
+            <div class="section-header">
+                <h2>Políticas Disponíveis</h2>
+                <p>Acesse as políticas e procedimentos organizados por categoria</p>
+            </div>
+            
+            <div class="policies-grid">
+                <!-- Política de Emissão NF PJ -->
+                <div class="policy-card" onclick="window.location.href='policies/emissao-nf-pj.html'" style="cursor: pointer;">
+                    <div class="policy-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <div class="policy-content">
+                        <h3>Emissão de Nota Fiscal PJ</h3>
+                        <p>Fluxo completo para emissão de notas fiscais de prestadores pessoa jurídica, incluindo datas, cálculos e aprovações.</p>
+                        <div class="policy-tags">
+                            <span class="tag">PJ</span>
+                            <span class="tag">Nota Fiscal</span>
+                            <span class="tag">Financeiro</span>
+                        </div>
+                        <div class="policy-stats">
+                            <span class="stat">
+                                <i class="fas fa-eye"></i> 47 visualizações
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-calendar"></i> Atualizado em 19/09/2025
+                            </span>
+                        </div>
+                        <div class="policy-link">
+                            Acessar Política <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Política de Reembolso -->
+                <div class="policy-card" onclick="window.location.href='policies/reembolso-prejuizo.html'" style="cursor: pointer;">
+                    <div class="policy-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <div class="policy-content">
+                        <h3>Reembolso de Prejuízo</h3>
+                        <p>Tratamento de prejuízos e descontos para CLT e PJ via Bitrix24, incluindo fluxo de aprovação e documentação.</p>
+                        <div class="policy-tags">
+                            <span class="tag">CLT</span>
+                            <span class="tag">PJ</span>
+                            <span class="tag">Reembolso</span>
+                        </div>
+                        <div class="policy-stats">
+                            <span class="stat">
+                                <i class="fas fa-eye"></i> 23 visualizações
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-calendar"></i> Atualizado em 22/08/2025
+                            </span>
+                        </div>
+                        <div class="policy-link">
+                            Acessar Política <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Política de Pagamentos -->
+                <div class="policy-card" onclick="window.location.href='../Politica de Pagamentos/policies/politica-pagamentos.html'" style="cursor: pointer;">
+                    <div class="policy-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <div class="policy-content">
+                        <h3>Política de Pagamentos</h3>
+                        <p>Diretrizes e procedimentos para solicitação, aprovação e execução de pagamentos, incluindo prazos e compliance.</p>
+                        <div class="policy-tags">
+                            <span class="tag">Pagamentos</span>
+                            <span class="tag">Aprovação</span>
+                            <span class="tag">Compliance</span>
+                        </div>
+                        <div class="policy-stats">
+                            <span class="stat">
+                                <i class="fas fa-eye"></i> 0 visualizações
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-calendar"></i> Atualizado em 19/09/2025
+                            </span>
+                        </div>
+                        <div class="policy-link">
+                            Acessar Política <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Links Úteis -->
+        <section class="quick-links-section">
+            <div class="section-header">
+                <h2>Links Úteis</h2>
+                <p>Acesso rápido a sistemas e ferramentas</p>
+            </div>
+            
+            <div class="quick-links-grid">
+                <a href="https://alldax.bitrix24.com.br/page/g3sa_financeiro/geral/" target="_blank" class="quick-link-card">
+                    <div class="link-icon">
+                        <i class="fas fa-external-link-alt"></i>
+                    </div>
+                    <div class="link-content">
+                        <h3>Portal Bitrix24</h3>
+                        <p>Sistema para abertura de tarefas financeiras</p>
+                    </div>
+                </a>
+
+                <div class="quick-link-card">
+                    <div class="link-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="link-content">
+                        <h3>Suporte TI</h3>
+                        <p>Suporte técnico interno - Em breve</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+                    
+    <footer class="footer">
+        <p>&copy; 2024 Grupo 3SA - Todos os direitos reservados</p>
+        <p>Portal de Políticas e Processos para Colaboradores • Versão 2.0.0 • Atualizado em 19/12/2024</p>
+    </footer>
+
+    <!-- Scripts Modulares -->
+    <script src="js/policies-config.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Compatibilidade com a busca personalizada
+        function performSearch() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const resultsDiv = document.getElementById('searchResults');
+            
+            if (!query.trim()) {
+                resultsDiv.innerHTML = '';
+                return;
+            }
+            
+            // Usar a função global do sistema existente
+            const results = typeof searchPolicies === 'function' ? searchPolicies(query) : [];
+            
+            if (results.length > 0) {
+                resultsDiv.innerHTML = `
+                    <h3>Resultados encontrados:</h3>
+                    <div class="search-results-grid">
+                        ${results.map(result => `
+                            <div class="search-result-item" onclick="window.location.href='${result.filePath}'">
+                                <div class="result-icon">
+                                    <i class="${result.icon}"></i>
+                                </div>
+                                <div class="result-content">
+                                    <h4>${result.title}</h4>
+                                    <p>${result.description}</p>
+                                    <div class="result-tags">
+                                        ${result.tags ? result.tags.slice(0, 3).map(tag => `<span class="tag">${tag}</span>`).join('') : ''}
+                                    </div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            } else {
+                resultsDiv.innerHTML = '<p>Nenhum resultado encontrado. Tente palavras como: PJ, nota fiscal, reembolso, pagamentos.</p>';
+            }
+        }
+        
+        // Busca ao pressionar Enter
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+            if (searchInput) {
+                searchInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        performSearch();
+                    }
+                });
+                
+                // Limpar resultados quando campo estiver vazio
+                searchInput.addEventListener('input', function(e) {
+                    if (!e.target.value.trim()) {
+                        document.getElementById('searchResults').innerHTML = '';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
