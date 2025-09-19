@@ -1,0 +1,74 @@
+Fluxo de Pagamento – Prestadores de Serviço PJ
+1. Data de Emissão da Nota Fiscal
+•	O pagamento das notas fiscais será realizado sempre no 1º dia útil de cada mês.
+•	Para isso, a nota fiscal deverá ser emitida no dia 25 do mês corrente.
+•	Caso o dia 25 caia em sábado, domingo ou feriado, a emissão deverá ser antecipada para o primeiro dia útil anterior.
+________________________________________
+2. Regras de Emissão da Nota Fiscal
+2.1 Prestadores que iniciam atividades entre os dias 01 e 25
+A nota fiscal deve considerar os dias efetivamente trabalhados até o dia 24 do mês corrente.
+Exemplos:
+•	Exemplo 1: Prestador iniciou em 01/07 → emite NF em 25/07 referente a 24 dias trabalhados (01 a 24).
+•	Exemplo 2: Prestador iniciou em 20/07 → emite NF em 25/07 referente a 5 dias trabalhados (20 a 24).
+________________________________________
+2.2 Prestadores que iniciam atividades a partir do dia 26
+As notas fiscais só deverão ser emitidas no mês seguinte, considerando os dias trabalhados até o dia 24.
+Exemplos:
+•	Exemplo 1: Prestador iniciou em 26/07 → emite NF em 25/08, considerando o período de 26/07 a 24/08.
+•	Exemplo 2: Prestador iniciou em 30/07 → emite NF em 25/08, considerando o período de 30/07 a 24/08.
+________________________________________
+3. Metodologia de Cálculo da Nota Fiscal
+O cálculo do valor da nota fiscal será proporcional, considerando 30 dias como padrão mensal.
+
+
+Fórmula:
+ 
+Exemplo:
+•	Valor contratual mensal: R$ 10.000,00
+•	Valor diário: R$ 10.000,00 ÷ 30 = R$ 333,33/dia
+•	Prestador trabalhou 24 dias (01 a 24)
+•	Valor da NF: 24 × R$ 333,33 = R$ 7.999,92
+________________________________________
+4. Fluxo de Envio para o Financeiro
+RH / DP
+1.	Abre uma tarefa no Bitrix24 individual para cada prestador PJ, contendo:
+o	Data de corte
+o	Valor autorizado para emissão da NF
+2.	Envia planilha consolidada no grupo do Bitrix24 para o Financeiro, com todos os prestadores e valores autorizados.
+Prestador de Serviço PJ
+1.	Acessa a tarefa no Bitrix24.
+2.	Confere os valores informados.
+3.	Emite a nota fiscal.
+4.	Abre uma tarefa no Bitrix24 pelo link (https://alldax.bitrix24.com.br/page/g3sa_financeiro/geral/), anexando a NF.
+
+
+Financeiro
+1.	Recebe todas as NFs e confere com a planilha do RH/DP.
+2.	Se valores corretos → lança no Omie e agenda o pagamento no banco.
+3.	Se valores incorretos → registra na tarefa a rejeição, justificativa e orientações para reemissão da NF conforme cálculo do RH/DP.
+Aprovação Final
+•	Após o agendamento de todos os pagamentos, o Gestor Financeiro realiza a conferência e informa ao Diretor Financeiro. 
+•	Diretor Financeiro realiza a aprovação final no banco.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fluxo para emissão de nota fiscal 
+
+ 

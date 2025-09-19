@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reembolso de Prejuízo - Grupo 3SA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/policy-page.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <img src="../Logo_grupo_3sa.png" alt="Logo Grupo 3SA" class="logo">
+                <div class="header-text">
+                    <h1 class="header-title">Reembolso de Prejuízo</h1>
+                    <p class="header-subtitle">Versão 1.1.0 • Atualizado em 22/08/2025</p>
+                </div>
+                <div class="header-nav">
+                    <a href="../index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        Voltar ao Início
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Navegação Rápida -->
+        <nav class="policy-nav fade-in">
+            <h2 class="nav-title">
+                <i class="fas fa-route"></i>
+                Navegação Rápida
+            </h2>
+            <div class="nav-buttons">
+                <a href="#identificacao-prejuizo" class="btn">
+                    <i class="fas fa-exclamation-triangle"></i> Identificação
+                </a>
+                <a href="#analise-rh" class="btn">
+                    <i class="fas fa-clipboard-check"></i> Análise RH
+                </a>
+                <a href="#processo-clt" class="btn">
+                    <i class="fas fa-user-friends"></i> Processo CLT
+                </a>
+                <a href="#processo-pj" class="btn">
+                    <i class="fas fa-building"></i> Processo PJ
+                </a>
+                <a href="#pagamento-guias" class="btn">
+                    <i class="fas fa-money-check-alt"></i> Guias/Reembolso
+                </a>
+                <a href="#encerramento" class="btn btn-primary">
+                    <i class="fas fa-check-double"></i> Encerramento
+                </a>
+            </div>
+        </nav>
+
+
+
+        <!-- Resumo Executivo -->
+        <section class="policy-summary fade-in">
+            <div class="summary-icon">
+                <i class="fas fa-coins"></i>
+            </div>
+            <div class="summary-content">
+                <h2>Resumo da Política</h2>
+                <p>Esta política estabelece o fluxo para tratamento de prejuízos e aplicação de descontos, diferenciando processos para funcionários CLT e prestadores PJ, com controle total via Bitrix24.</p>
+                <div class="summary-stats">
+                    <div class="stat">
+                        <strong>Plataforma:</strong> Bitrix24
+                    </div>
+                    <div class="stat">
+                        <strong>Responsáveis:</strong> RH, Financeiro
+                    </div>
+                    <div class="stat">
+                        <strong>Tipos:</strong> CLT, PJ, Guias
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 1: Identificação do Prejuízo -->
+        <section class="policy-section fade-in" id="identificacao-prejuizo">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <div class="section-title-content">
+                    <h2 class="section-title">1. Identificação do Prejuízo</h2>
+                    <span class="section-tag">Inicial</span>
+                </div>
+            </div>
+            
+            <div class="policy-content">
+                <div class="workflow-step">
+                    <div class="step-indicator">
+                        <div class="step-number">1</div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-header">
+                            <h4><i class="fas fa-user-tie"></i> Líder Imediato</h4>
+                            <span class="step-tag">Responsabilidade</span>
+                        </div>
+                        <div class="step-tasks">
+                            <div class="task">
+                                <i class="fas fa-search"></i>
+                                <strong>Identifica o erro/prejuízo</strong> (interno ou a cliente)
+                            </div>
+                            <div class="task">
+                                <i class="fas fa-plus-circle"></i>
+                                <strong>Abre tarefa no Bitrix24</strong>, atribuindo o RH como responsável
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-box important">
+                    <h3><i class="fas fa-clipboard-list"></i> Documentação Obrigatória</h3>
+                    <p>Na tarefa do Bitrix24, o líder deve anexar:</p>
+                    <div class="feature-list" style="margin-top: 1rem;">
+                        <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.5rem 0;">
+                            <i class="fas fa-file-alt" style="color: var(--primary-color); margin-top: 0.2rem;"></i>
+                            <div><strong>Evidências/documentação da falha:</strong> Prints, e-mails, relatórios ou qualquer comprovação do erro</div>
+                        </div>
+                        <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.5rem 0;">
+                            <i class="fas fa-money-check-alt" style="color: var(--primary-color); margin-top: 0.2rem;"></i>
+                            <div><strong>Guia(s) do imposto ou dados bancários:</strong> Se houver necessidade de pagamento/reembolso</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h4><i class="fas fa-lightbulb"></i> Exemplos de Situações</h4>
+                    <div class="examples-grid">
+                        <div class="example-card">
+                            <div class="example-header">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <strong>Erro Interno</strong>
+                            </div>
+                            <div class="example-content">
+                                <p>Atraso em entrega causou multa contratual</p>
+                                <p><strong>Evidência:</strong> E-mail do cliente + boleto da multa</p>
+                            </div>
+                        </div>
+                        
+                        <div class="example-card">
+                            <div class="example-header">
+                                <i class="fas fa-user-times"></i>
+                                <strong>Erro de Cliente</strong>
+                            </div>
+                            <div class="example-content">
+                                <p>Informações incorretas geraram retrabalho</p>
+                                <p><strong>Evidência:</strong> Histórico de comunicação + horas extras</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 2: Análise do RH -->
+        <section class="policy-section fade-in" id="analise-rh">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-clipboard-check"></i>
+                </div>
+                <div class="section-title-content">
+                    <h2 class="section-title">2. Análise do RH</h2>
+                    <span class="section-tag">Avaliação</span>
+                </div>
+            </div>
+            
+            <div class="policy-content">
+                <div class="content-block">
+                    <h4>Processo de Avaliação</h4>
+                    <p>O RH avalia a ocorrência e define o tipo de desconto/pagamento aplicável conforme o tipo de colaborador:</p>
+                </div>
+
+                <div class="rule-container">
+                    <div class="rule-section" id="processo-clt">
+                        <h3><i class="fas fa-user-friends"></i> CLT – Desconto em Folha</h3>
+                        <div class="workflow-step">
+                            <div class="step-indicator">
+                                <div class="step-number">✓</div>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <h4>Processo Simplificado</h4>
+                                    <span class="step-tag success">Encerramento no RH</span>
+                                </div>
+                                <div class="step-tasks">
+                                    <div class="task success">
+                                        <i class="fas fa-check-circle"></i>
+                                        RH valida a responsabilidade e procedência
+                                    </div>
+                                    <div class="task success">
+                                        <i class="fas fa-calculator"></i>
+                                        Registra o desconto diretamente na folha de pagamento
+                                    </div>
+                                    <div class="task success">
+                                        <i class="fas fa-check-double"></i>
+                                        <strong>Processo é encerrado no próprio RH</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-box formula">
+                            <h4><i class="fas fa-info-circle"></i> Importante para CLT</h4>
+                            <p>O desconto será aplicado automaticamente na próxima folha de pagamento. Não há necessidade de envolvimento do Financeiro.</p>
+                        </div>
+                    </div>
+
+                    <div class="rule-section" id="processo-pj">
+                        <h3><i class="fas fa-building"></i> PJ – Desconto em Pagamento</h3>
+                        <div class="workflow">
+                            <div class="workflow-step">
+                                <div class="step-indicator">
+                                    <div class="step-number">1</div>
+                                    <div class="step-line"></div>
+                                </div>
+                                <div class="step-content">
+                                    <div class="step-header">
+                                        <h4><i class="fas fa-users"></i> RH</h4>
+                                        <span class="step-tag">Validação</span>
+                                    </div>
+                                    <div class="step-tasks">
+                                        <div class="task">
+                                            <i class="fas fa-search"></i>
+                                            Valida a responsabilidade do prestador
+                                        </div>
+                                        <div class="task">
+                                            <i class="fas fa-calculator"></i>
+                                            Define o valor a ser descontado
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="workflow-step">
+                                <div class="step-indicator">
+                                    <div class="step-number">2</div>
+                                </div>
+                                <div class="step-content">
+                                    <div class="step-header">
+                                        <h4><i class="fas fa-arrow-right"></i> Reatribuição</h4>
+                                        <span class="step-tag">Transferência</span>
+                                    </div>
+                                    <div class="step-tasks">
+                                        <div class="task">
+                                            <i class="fas fa-hand-point-right"></i>
+                                            RH reatribui a tarefa ao <strong>Financeiro</strong>
+                                        </div>
+                                        <div class="task">
+                                            <i class="fas fa-info-circle"></i>
+                                            Informa valores e detalhes a descontar
+                                        </div>
+                                        <div class="task">
+                                            <i class="fas fa-money-bill-wave"></i>
+                                            Financeiro aplica desconto na liquidação da nota do PJ
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rule-section" id="pagamento-guias">
+                        <h3><i class="fas fa-money-check-alt"></i> Pagamento de Guia/Reembolso</h3>
+                        <div class="workflow">
+                            <div class="workflow-step">
+                                <div class="step-indicator">
+                                    <div class="step-number">1</div>
+                                    <div class="step-line"></div>
+                                </div>
+                                <div class="step-content">
+                                    <div class="step-header">
+                                        <h4><i class="fas fa-users"></i> RH</h4>
+                                        <span class="step-tag">Preparação</span>
+                                    </div>
+                                    <div class="step-tasks">
+                                        <div class="task">
+                                            <i class="fas fa-check-circle"></i>
+                                            Valida a responsabilidade da empresa
+                                        </div>
+                                        <div class="task">
+                                            <i class="fas fa-file-alt"></i>
+                                            Verifica documentação (guias, dados bancários)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="workflow-step">
+                                <div class="step-indicator">
+                                    <div class="step-number">2</div>
+                                    <div class="step-line"></div>
+                                </div>
+                                <div class="step-content">
+                                    <div class="step-header">
+                                        <h4><i class="fas fa-calculator"></i> Financeiro</h4>
+                                        <span class="step-tag">Execução</span>
+                                    </div>
+                                    <div class="step-tasks">
+                                        <div class="task">
+                                            <i class="fas fa-money-check"></i>
+                                            Executa pagamento dentro do prazo
+                                        </div>
+                                        <div class="task">
+                                            <i class="fas fa-receipt"></i>
+                                            Anexa comprovante de pagamento na tarefa
+                                        </div>
+                                        <div class="task">
+                                            <i class="fas fa-clock"></i>
+                                            Garante cumprimento dos prazos legais
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="workflow-step">
+                                <div class="step-indicator">
+                                    <div class="step-number">✓</div>
+                                </div>
+                                <div class="step-content">
+                                    <div class="step-header">
+                                        <h4><i class="fas fa-check-double"></i> Comprovação</h4>
+                                        <span class="step-tag success">Finalização</span>
+                                    </div>
+                                    <div class="step-tasks">
+                                        <div class="task success">
+                                            <i class="fas fa-file-pdf"></i>
+                                            Comprovante anexado no Bitrix24
+                                        </div>
+                                        <div class="task success">
+                                            <i class="fas fa-archive"></i>
+                                            Histórico completo arquivado
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="example-box">
+                            <h4><i class="fas fa-file-invoice"></i> Tipos de Guias/Reembolsos</h4>
+                            <div class="examples-grid">
+                                <div class="example-card">
+                                    <div class="example-header">
+                                        <i class="fas fa-university"></i>
+                                        <strong>Guias de Imposto</strong>
+                                    </div>
+                                    <div class="example-content">
+                                        <p>DARF, GPS, GIA, etc.</p>
+                                        <p><strong>Prazo:</strong> Conforme vencimento</p>
+                                        <p><strong>Comprovante:</strong> Recibo de pagamento</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="example-card">
+                                    <div class="example-header">
+                                        <i class="fas fa-hand-holding-usd"></i>
+                                        <strong>Reembolso Cliente</strong>
+                                    </div>
+                                    <div class="example-content">
+                                        <p>Transferência PIX/TED</p>
+                                        <p><strong>Prazo:</strong> Conforme acordo</p>
+                                        <p><strong>Comprovante:</strong> Extrato bancário</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 3: Encerramento -->
+        <section class="policy-section fade-in" id="encerramento">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-check-double"></i>
+                </div>
+                <div class="section-title-content">
+                    <h2 class="section-title">3. Encerramento e Registro</h2>
+                    <span class="section-tag">Final</span>
+                </div>
+            </div>
+            
+            <div class="policy-content">
+                <div class="highlight-box important">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Critérios de Encerramento</h3>
+                    <p>A tarefa no Bitrix24 só pode ser encerrada quando todas as condições forem atendidas:</p>
+                </div>
+
+                <div class="content-block">
+                    <div class="examples-grid">
+                        <div class="example-card">
+                            <div class="example-header">
+                                <i class="fas fa-user-friends"></i>
+                                <strong>CLT</strong>
+                            </div>
+                            <div class="example-content">
+                                <p style="color: #16a34a; font-weight: 600;">✅ Desconto confirmado pelo RH</p>
+                                <p>Registro na folha de pagamento</p>
+                                <p><small>Encerramento: Próprio RH</small></p>
+                            </div>
+                        </div>
+                        
+                        <div class="example-card">
+                            <div class="example-header">
+                                <i class="fas fa-building"></i>
+                                <strong>PJ</strong>
+                            </div>
+                            <div class="example-content">
+                                <p style="color: #16a34a; font-weight: 600;">✅ Desconto confirmado pelo Financeiro</p>
+                                <p>Aplicação na liquidação da NF</p>
+                                <p><small>Encerramento: Financeiro</small></p>
+                            </div>
+                        </div>
+                        
+                        <div class="example-card">
+                            <div class="example-header">
+                                <i class="fas fa-money-check-alt"></i>
+                                <strong>Guias/Transferências</strong>
+                            </div>
+                            <div class="example-content">
+                                <p style="color: #16a34a; font-weight: 600;">✅ Comprovante anexado pelo Financeiro</p>
+                                <p>Pagamento executado e comprovado</p>
+                                <p><small>Encerramento: Financeiro</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-box formula">
+                    <h3><i class="fas fa-archive"></i> Arquivo e Histórico</h3>
+                    <div class="feature-list">
+                        <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.5rem 0;">
+                            <i class="fas fa-check-circle" style="color: #16a34a; margin-top: 0.2rem;"></i>
+                            <div><strong>Aprovação:</strong> Registro completo da validação do RH</div>
+                        </div>
+                        <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.5rem 0;">
+                            <i class="fas fa-file-alt" style="color: #16a34a; margin-top: 0.2rem;"></i>
+                            <div><strong>Evidências:</strong> Todas as documentações anexadas permanecem</div>
+                        </div>
+                        <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.5rem 0;">
+                            <i class="fas fa-calculator" style="color: #16a34a; margin-top: 0.2rem;"></i>
+                            <div><strong>Descontos:</strong> Histórico completo dos valores aplicados</div>
+                        </div>
+                        <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.5rem 0;">
+                            <i class="fas fa-receipt" style="color: #16a34a; margin-top: 0.2rem;"></i>
+                            <div><strong>Pagamentos:</strong> Comprovantes de todas as transações</div>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 1.5rem; padding: 1rem; background: rgba(222, 230, 83, 0.1); border-radius: 8px; font-weight: 600;">
+                        📝 Todo o histórico permanece arquivado no Bitrix24 para futuras consultas e auditorias
+                    </div>
+                </div>
+
+                <div class="calculator-tool">
+                    <h4><i class="fas fa-link"></i> Links Úteis</h4>
+                    <div class="feature-list">
+                        <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px; margin: 0.5rem 0;">
+                            <i class="fas fa-external-link-alt" style="color: var(--accent-color);"></i>
+                            <a href="https://alldax.bitrix24.com.br/page/g3sa_financeiro/geral/" target="_blank" style="color: var(--accent-color); text-decoration: none; font-weight: 600;">
+                                Portal Financeiro Bitrix24
+                            </a>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px; margin: 0.5rem 0;">
+                            <i class="fas fa-question-circle" style="color: var(--primary-color);"></i>
+                            <span style="font-weight: 600;">Dúvidas: Contate o RH ou Financeiro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Informações Adicionais -->
+        <section class="policy-footer fade-in">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3><i class="fas fa-info-circle"></i> Informações da Política</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <strong>Versão:</strong> 1.1.0
+                        </div>
+                        <div class="info-item">
+                            <strong>Última Atualização:</strong> 22/08/2025
+                        </div>
+                        <div class="info-item">
+                            <strong>Próxima Revisão:</strong> 22/02/2026
+                        </div>
+                        <div class="info-item">
+                            <strong>Responsável:</strong> Departamento de RH
+                        </div>
+                        <div class="info-item">
+                            <strong>Aprovado por:</strong> Diretoria de RH
+                        </div>
+                        <div class="info-item">
+                            <strong>Categoria:</strong> Políticas de RH
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-actions">
+                    <button class="btn" onclick="window.print()">
+                        <i class="fas fa-print"></i> Imprimir
+                    </button>
+                    <a href="../index.html" class="btn btn-primary">
+                        <i class="fas fa-home"></i> Voltar ao Início
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Grupo 3SA - Todos os direitos reservados</p>
+        <p>Portal de Políticas e Processos para Colaboradores</p>
+    </footer>
+
+    <script>
+
+        // Smooth scrolling para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animações ao scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.policy-section, .policy-nav, .policy-summary').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
