@@ -1130,4 +1130,33 @@
     .workflow .step-content {
         padding: var(--spacing-md);
     }
+    
+    /* Fluxograma Mobile Otimizado */
+    .flowchart-container {
+        margin: var(--spacing-md) -1rem;
+        padding: var(--spacing-md);
+        border-radius: 0;
+        background: var(--bg-secondary);
+    }
+    
+    .flowchart-image {
+        max-width: calc(100vw - 2rem);
+        width: 100%;
+        height: auto;
+        border-radius: var(--radius-sm);
+        /* Permite scroll horizontal se necessário */
+        object-fit: contain;
+        box-shadow: var(--shadow-sm);
+    }
+    
+    .flowchart-image:hover {
+        transform: none; /* Remove zoom no mobile */
+    }
+    
+    .flowchart-caption {
+        font-size: 0.9rem;
+        padding: 0 var(--spacing-sm);
+        text-align: center;
+        line-height: 1.4;
+    }
 }
