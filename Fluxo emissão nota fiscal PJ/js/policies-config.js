@@ -24,8 +24,8 @@ const POLICIES_CONFIG = {
             icon: "fas fa-file-invoice-dollar",
             category: "Financeiro",
             status: "active", // active, draft, archived
-            version: "1.2.0",
-            lastUpdate: "2025-08-22",
+            version: "1.4.0",
+            lastUpdate: "2025-09-29",
             author: "Departamento Financeiro",
             approvedBy: "Diretoria Financeira",
             tags: ["PJ", "nota fiscal", "pagamento", "prestador", "financeiro", "dia 25", "cálculo"],
@@ -57,6 +57,17 @@ const POLICIES_CONFIG = {
                 }
             ],
             changelog: [
+                {
+                    version: "1.4.0",
+                    date: "2025-09-29",
+                    changes: [
+                        "Reestruturação completa do fluxo de envio para o financeiro",
+                        "Implementação de validação centralizada no RH/DP",
+                        "Adição de fluxo condicional para correção de valores",
+                        "Consolidação de notas fiscais em tarefa única para o financeiro"
+                    ],
+                    author: "Sistema"
+                },
                 {
                     version: "1.3.0",
                     date: "2025-09-18",
