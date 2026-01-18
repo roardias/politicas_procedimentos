@@ -10,14 +10,18 @@ Centralizar e facilitar o acesso às políticas corporativas, proporcionando uma
 
 ### ✅ Funcionalidades Implementadas
 
-- **🔍 Sistema de Busca Avançado**: Busca inteligente por palavras-chave em todas as políticas
+- **🔍 Sistema de Busca Avançado**: Busca inteligente com suporte a acentos (férias/ferias, rescisão/rescisao)
 - **📱 Design Responsivo**: Interface otimizada para desktop, tablet e mobile
-- **🎨 Interface Moderna**: Design profissional com tema escuro/claro
+- **🎨 Interface Moderna**: Design profissional com cards de departamentos lado a lado
 - **📊 Estatísticas de Uso**: Contador de visualizações e métricas de acesso
-- **🔄 Navegação Intuitiva**: Links rápidos e navegação entre seções
-- **📄 Exportação**: Opções para imprimir e baixar PDFs
+- **🔄 Navegação Intuitiva**: Links rápidos e navegação entre seções com hash URLs
+- **📄 Exportação**: Opções para imprimir e baixar PDFs de todas as políticas
+- **👥 Divisão por Departamentos**: Área Financeira e Recursos Humanos e DP
+- **🎯 Navegação Direta**: Links que levam diretamente às seções específicas
 
 ### 📋 Políticas Disponíveis
+
+#### 💼 **Área Financeira**
 
 1. **💳 Política de Pagamentos**
    - Prazos para solicitação
@@ -31,11 +35,29 @@ Centralizar e facilitar o acesso às políticas corporativas, proporcionando uma
    - Datas de emissão
    - Regras de cálculo
    - Processo de envio
+   - Integração com líder imediato
 
 3. **💰 Reembolso de Prejuízo**
    - Tratamento de prejuízos CLT/PJ
    - Fluxo via Bitrix24
    - Aprovações necessárias
+
+#### 👥 **Recursos Humanos e Departamento Pessoal**
+
+4. **🏖️ Solicitação de Férias**
+   - Política semestral de solicitação
+   - Processo via Bitrix24
+   - Prazos e aprovações
+   - Fracionamento e abono pecuniário
+   - Download de PDF disponível
+
+5. **📋 Checklist de Desligamento**
+   - Procedimentos completos de rescisão
+   - Documentação obrigatória
+   - Prazos legais
+   - Homologação e TRCT
+   - Checkboxes organizados por seção
+   - Download de PDF disponível
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -109,6 +131,17 @@ O sistema de busca indexa:
 - "reembolso", "prejuízo", "CLT"
 
 ## 🔄 Atualizações Recentes
+
+### Versão 2.1.0 (Janeiro 2026) 🆕
+
+- ✅ **Novas Políticas RH e DP**: Solicitação de Férias e Checklist de Desligamento
+- ✅ **Busca com Suporte a Acentos**: Pesquise "ferias" ou "férias", "rescisao" ou "rescisão"
+- ✅ **Navegação por Departamentos**: Cards lado a lado com responsividade
+- ✅ **Downloads de PDF**: Todas as políticas com opção de download
+- ✅ **Navegação Direta**: Links com hash URLs (#rh-dp) para seções específicas
+- ✅ **Checkboxes Organizados**: Alinhamento correto no Checklist de Desligamento
+- ✅ **Integração Bitrix**: Atualização para incluir líder imediato nos processos
+- ✅ **Remoção de Páginas Desnecessárias**: Estrutura mais limpa e direta
 
 ### Versão 2.0.0 (Setembro 2025)
 - ✅ Reformulação completa da interface
