@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist de Desligamento - Grupo 3SA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/policy-page.css">
+    <style>
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            background: var(--bg-secondary);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            transition: all var(--transition-normal);
+        }
+        
+        .subsection .checklist-item {
+            margin-left: 0;
+            background: #f1f5f9;
+            border-color: #cbd5e1;
+        }
+        
+        .checklist-item:hover {
+            background: var(--bg-primary);
+            border-color: var(--primary-color);
+        }
+        
+        .checklist-item input[type="checkbox"] {
+            margin-top: 0.2rem;
+            width: 18px;
+            height: 18px;
+            accent-color: var(--primary-color);
+        }
+        
+        .checklist-item label {
+            flex: 1;
+            line-height: 1.5;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+        
+        .subsection {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+            border-left: 4px solid var(--primary-color);
+            position: relative;
+        }
+        
+        .subsection::before {
+            content: '';
+            position: absolute;
+            left: -2px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--primary-color), transparent);
+        }
+        
+        .subsection h3, .subsection h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .subsection .subsection {
+            margin-left: 1rem;
+            padding-left: 1.5rem;
+            border-left: 2px solid #94a3b8;
+            background: rgba(148, 163, 184, 0.05);
+            border-radius: var(--radius-md);
+            margin-top: 1rem;
+        }
+        
+        .subsection .subsection h4 {
+            color: #64748b;
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .subsection .subsection .checklist-item {
+            background: #e2e8f0;
+            border-color: #94a3b8;
+            margin-left: 0;
+        }
+        
+        .template-text {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--primary-color);
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        .signature-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: var(--bg-secondary);
+            border-radius: var(--radius-lg);
+        }
+        
+        .signature-box {
+            text-align: center;
+            min-width: 300px;
+        }
+        
+        .signature-line {
+            width: 100%;
+            height: 2px;
+            background: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .signature-box p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+        
+        .warning-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border: 1px solid #f59e0b;
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .warning-box p {
+            margin: 0.5rem 0;
+            color: #92400e;
+        }
+        
+        @media (max-width: 768px) {
+            .signature-section {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .signature-box {
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <img src="../Logo_grupo_3sa.png" alt="Logo Grupo 3SA" class="logo">
+                <div class="header-text">
+                    <h1 class="header-title">Checklist de Desligamento</h1>
+                    <p class="header-subtitle">Versão 2.0.0 • Atualizado em 18/01/2026</p>
+                </div>
+                <div class="header-nav">
+                    <a href="../../Fluxo emissão nota fiscal PJ/index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        Portal Principal
+                    </a>
+                    <a href="../../Fluxo emissão nota fiscal PJ/index.html#rh-dp" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        RH e DP
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+    <!-- Navegação Rápida -->
+    <nav class="policy-nav fade-in">
+        <h2 class="nav-title">
+            <i class="fas fa-rocket"></i>
+            Acesso Rápido
+        </h2>
+        <div class="nav-buttons">
+            <a href="../../Politicas DP e RH/Checklist de Desligamento v.2 (1).pdf" download class="btn btn-primary">
+                <i class="fas fa-download"></i> Baixar PDF
+            </a>
+            <a href="#comunicacao" class="btn">
+                <i class="fas fa-comments"></i> 1. Comunicação
+            </a>
+            <a href="#devolucao" class="btn">
+                <i class="fas fa-box"></i> 2. Devolução
+            </a>
+            <a href="#entrevista" class="btn">
+                <i class="fas fa-user-tie"></i> 3. Entrevista
+            </a>
+            <a href="#documentacao-inicial" class="btn">
+                <i class="fas fa-file-alt"></i> 4. Documentação
+            </a>
+            <a href="#exclusao" class="btn">
+                <i class="fas fa-user-times"></i> 5. Exclusão
+            </a>
+            <a href="#acompanhamento" class="btn">
+                <i class="fas fa-tasks"></i> 6. Acompanhamento
+            </a>
+            <a href="#calculos" class="btn">
+                <i class="fas fa-calculator"></i> 7. Cálculos
+            </a>
+            <a href="#financeiro" class="btn">
+                <i class="fas fa-money-bill"></i> 8. Financeiro
+            </a>
+            <a href="#documentacao-final" class="btn">
+                <i class="fas fa-folder"></i> 9. Docs Finais
+            </a>
+            <a href="#homologacao" class="btn">
+                <i class="fas fa-stamp"></i> 10. Homologação
+            </a>
+        </div>
+    </nav>
+
+        <!-- Resumo Executivo -->
+        <section class="policy-summary fade-in">
+            <div class="summary-icon">
+                <i class="fas fa-clipboard-check"></i>
+            </div>
+            <div class="summary-content">
+                <h2>Checklist de Desligamento</h2>
+                <p>Este checklist estabelece todos os procedimentos necessários para o processo de desligamento de colaboradores, garantindo o cumprimento das obrigações legais e a organização dos processos de DP.</p>
+                <div class="summary-stats">
+                    <div class="stat">
+                        <strong>Etapas:</strong> 10 principais
+                    </div>
+                    <div class="stat">
+                        <strong>Responsáveis:</strong> RH, DP, Gestor
+                    </div>
+                    <div class="stat">
+                        <strong>Homologação:</strong> Obrigatória
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conteúdo da Política -->
+        <div class="policy-content">
+            <section id="comunicacao" class="policy-section fade-in">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="section-title-content">
+                        <h2 class="section-title">1. Comunicação do Desligamento</h2>
+                        <span class="section-tag">Inicial</span>
+                    </div>
+                </div>
+                
+                <div class="subsection">
+                    <h3>1.1 Pedido pelo Colaborador:</h3>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="pedido-colaborador">
+                        <label for="pedido-colaborador">O Gestor entrega ao RH a solicitação de desligamento do colaborador (feita de próprio punho conforme modelo orientado pelo RH).</label>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h3>1.2 Solicitação do Gestor:</h3>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="registro-bitrix">
+                        <label for="registro-bitrix">Registrar a solicitação no Bitrix como tarefa para o RH.</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-horas">
+                        <label for="check-horas">O DP checa a quantidade de horas a compensar e envia para o Gestor.</label>
+                    </div>
+
+                <div class="subsection">
+                    <h4>1.2.1 Se houver horas positivas:</h4>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="avaliacao-momento">
+                        <label for="avaliacao-momento">O gestor deve avaliar se é o melhor momento para efetivar o desligamento, caso não seja possível compensar as horas e as férias solicitar autorização para Eduardo e William.</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="dias-compensacao">
+                        <label for="dias-compensacao">O gestor deve acrescentar na tarefa os dias e horários que o colaborador irá compensar as horas e/ou período de férias antes da efetivação da rescisão (Avaliando o período de estabilidade pós férias).</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="comissionamento">
+                        <label for="comissionamento">O gestor deverá apurar no ato da solicitação da rescisão se o colaborador tem comissionamento ou bonificação a receber e repassar todos os cálculos com o colaborador antes de sua saída, caso o gestor não tenha os cálculos destes valores a rescisão deverá ser pausada até conclusão e tratativa junto ao colaborador.</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="distrato-saude">
+                        <label for="distrato-saude">O DP deverá preparar o distrato do plano de saúde, para recolher a assinatura do colaborador antes de saída.</label>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section id="devolucao" class="policy-section fade-in">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <div class="section-title-content">
+                        <h2 class="section-title">2. Devolução de Materiais e Acesso – RH</h2>
+                        <span class="section-tag">Materiais</span>
+                    </div>
+                </div>
+                
+                <div class="checklist-item">
+                    <input type="checkbox" id="celular">
+                    <label for="celular">Coletar o celular corporativo.</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="chip">
+                    <label for="chip">Coletar o chip de telefonia.</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="chaves">
+                    <label for="chaves">Coletar chaves de acesso (escritório, armários, etc.).</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="controle">
+                    <label for="controle">Coletar controle remoto (se aplicável).</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="notebook">
+                    <label for="notebook">Coletar notebook e outros equipamentos fornecidos (como mouse, teclado, etc.).</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="cancelar-acesso">
+                    <label for="cancelar-acesso">Cancelar acesso a portas e sistemas (incluir sistemas online e físicos).</label>
+                </div>
+            </section>
+
+            <section id="entrevista" class="policy-section fade-in">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="section-title-content">
+                        <h2 class="section-title">3. Entrevista de Desligamento – RH</h2>
+                        <span class="section-tag">Feedback</span>
+                    </div>
+                </div>
+                
+                <div class="checklist-item">
+                    <input type="checkbox" id="agendar-entrevista">
+                    <label for="agendar-entrevista">O RH deverá agendar a entrevista de desligamento com o colaborador (Caso no dia o colaborador se recuse).</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="conduzir-entrevista">
+                    <label for="conduzir-entrevista">O RH conduzirá a entrevista, coletando feedback e informações relevantes (No dia do desligamento).</label>
+                </div>
+            </section>
+
+            <section id="documentacao-inicial" class="policy-section fade-in">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="section-title-content">
+                        <h2 class="section-title">4. Documentação</h2>
+                        <span class="section-tag">Registro</span>
+                    </div>
+                </div>
+                
+                <div class="checklist-item">
+                    <input type="checkbox" id="registro-materiais">
+                    <label for="registro-materiais">Garantir que todos os materiais devolvidos sejam registrados (Formulário de devolução).</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="entregar-solicitacao">
+                    <label for="entregar-solicitacao">Entregar a solicitação de desligamento ou o aviso para o DP.</label>
+                </div>
+            </section>
+
+            <section id="exclusao" class="policy-section fade-in">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-user-times"></i>
+                    </div>
+                    <div class="section-title-content">
+                        <h2 class="section-title">5. Exclusão - RH</h2>
+                        <span class="section-tag">Sistemas</span>
+                    </div>
+                </div>
+                
+                <div class="subsection">
+                    <h3>5.1 Excluir todos os acessos do colaborador:</h3>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="exclusao-m3x">
+                        <label for="exclusao-m3x">Realizar exclusão de acesso com a M3X: conta microsoft / e-mail @g3sa, acesso ao computador e acesso ao cloud.</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="exclusao-ti">
+                        <label for="exclusao-ti">Realizar exclusão junto a equipe de TI: ponto Tangerino, Bitrix, rede da Alldax, acesso remoto, Dominio e demais sistemas.</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="exclusao-beneficios">
+                        <label for="exclusao-beneficios">Excluir imediatamente do TotalPass e Plano de saúde. Admitidos no plano de agosto de 2025, não tem direito à extensão.</label>
+                    </div>
+                </div>
+            </section>
+
+            <section id="acompanhamento" class="policy-section fade-in">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="section-title-content">
+                        <h2 class="section-title">6. Acompanhamento</h2>
+                        <span class="section-tag">Controle</span>
+                    </div>
+                </div>
+                
+                <div class="checklist-item">
+                    <input type="checkbox" id="confirmar-etapas">
+                    <label for="confirmar-etapas">Confirmar que todas as etapas foram concluídas antes da saída oficial do colaborador.</label>
+                </div>
+            </section>
+
+            <section id="calculos" class="policy-section fade-in">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="section-title-content">
+                        <h2 class="section-title">7. Dos cálculos de rescisão - DP</h2>
+                        <span class="section-tag">Cálculos</span>
+                    </div>
+                </div>
+                
+                <div class="checklist-item">
+                    <input type="checkbox" id="check-cid">
+                    <label for="check-cid">Checar se houve algum afastamento por CID F e/ou abertura de CAT, printar e deixar na pasta do colaborador. (Principalmente se houver laudo atestando a doença relacionada ao trabalho).</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="data-base">
+                    <label for="data-base">Verificar a data base para o desligamento.</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="estabilidade">
+                    <label for="estabilidade">Confirmar se houve alguma estabilidade. Lembrando que a estabilidade de férias é a mesma quantidade de dias de gozo.</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="totalpass">
+                    <label for="totalpass">Consultar sempre a fatura e não o site para o desconto do TotalPass e confirmar a quantidade de check in. Data de corte de 10 a 09 do próximo mês com o mínimo de 16 check independente da data de desligamento.</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="fgts">
+                    <label for="fgts">Solicitar extrato de FGTS, verificar todos os apontamentos, lembrando dos descontos de empréstimos (calcular sempre na data de pagamento- Valdeci é um exemplo), empréstimos consignados do governo, CRC, notificação de danos causados. No home é pago 90,00 proporcionalizados aos dias do mês e só recebe VA. Em dias de compensação não desconta VT. Para descontar VA a jornada do dia precisa ser inferior a 6h11min.</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="descontar-tudo">
+                    <label for="descontar-tudo">Descontar tudo na rescisão mesmo se o colaborador continuar na empresa.</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="abonar-dia">
+                    <label for="abonar-dia">Abonar o dia do desligamento do ponto para que o colaborador não fique no prejuízo.</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="aso">
+                    <label for="aso">Mandar para o colaborador o encaminhamento do ASO de desligamento e já marcar a homologação presencial.</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="carta-referencia">
+                    <label for="carta-referencia">NÃO emitir carta de referência no período de experiência.</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="valor-alto">
+                    <label for="valor-alto">Caso a rescisão fique com o valor a pagar acima de R$ 3.000,00 deve ser enviado no grupo de whatsapp de cada empresa (RH – Alldax, RH – Taxall, RH – concimed, RH – áreas meio Grupo 3SA).</label>
+                </div>
+            </section>
+
+            <section id="financeiro" class="policy-section fade-in">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-money-bill"></i>
+                    </div>
+                    <div class="section-title-content">
+                        <h2 class="section-title">8. Do envio para o financeiro - DP</h2>
+                        <span class="section-tag">Financeiro</span>
+                    </div>
+                </div>
+                
+                <div class="checklist-item">
+                    <input type="checkbox" id="envio-financeiro">
+                    <label for="envio-financeiro">Enviar termo de rescisão e guia de GRRF quando for o caso com a maior brevidade possível (máximo 2 dias).</label>
+                </div>
+            </section>
+
+            <section id="documentacao-final" class="policy-section fade-in">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-folder"></i>
+                    </div>
+                    <div class="section-title-content">
+                        <h2 class="section-title">9. Documentação Final</h2>
+                        <span class="section-tag">Documentos</span>
+                    </div>
+                </div>
+                
+                <div class="checklist-item">
+                    <input type="checkbox" id="trct">
+                    <label for="trct">TRCT + quitação</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="kit-profissional">
+                    <label for="kit-profissional">Kit profissional</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="relacao-inss">
+                    <label for="relacao-inss">Relação INSS + Discriminação das parcelas</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="ficha-empregado">
+                    <label for="ficha-empregado">Ficha do empregado</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="seguro-desemprego">
+                    <label for="seguro-desemprego">Requerimento do seguro-desemprego (quando for o caso)</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="carta-referencia-final">
+                    <label for="carta-referencia-final">Carta de Referência - acima de 90 dias, quando solicitado pelo colaborador</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="ponto">
+                    <label for="ponto">Ponto</label>
+                </div>
+            </section>
+
+            <section id="homologacao" class="policy-section fade-in">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-stamp"></i>
+                    </div>
+                    <div class="section-title-content">
+                        <h2 class="section-title">10. Homologação</h2>
+                        <span class="section-tag">Final</span>
+                    </div>
+                </div>
+                
+                <div class="checklist-item">
+                    <input type="checkbox" id="envio-convocacao">
+                    <label for="envio-convocacao">Enviar via whatsApp e e-mail o texto de convocação (conforme modelo abaixo).</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="marcar-data">
+                    <label for="marcar-data">Marcar sempre para a data de pagamento.</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="assinaturas">
+                    <label for="assinaturas">Pegar assinatura nos documentos (quitação + ficha de empregado + ponto + canhoto do seguro-desemprego) com uma testemunha.</label>
+                </div>
+
+                <div class="info-box">
+                    <h4><i class="fas fa-envelope"></i> Modelo do texto de convocação:</h4>
+                    <div class="template-text">
+                        <p><strong>Olá, XXXXX.</strong></p>
+                        <p>Informamos que o termo de rescisão do seu contrato de trabalho estará disponível para assinatura no dia 22/09/2025 às 16:00hs, na sede da empresa CRS, Qd. 502, Bloco B, Loja 59, Térreo- Asa Sul- Brasília DF.</p>
+                        <p>Caso não possa comparecer, pedimos que nos avise com antecedência. A presente mensagem constitui notificação formal.</p>
+                        <br>
+                        <p><strong>Atenciosamente,</strong><br>
+                        Luana Gõmes<br>
+                        Analista de Gente e Gestão</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="observacoes" class="policy-section fade-in">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="section-title-content">
+                        <h2 class="section-title">Observações Importantes</h2>
+                        <span class="section-tag">Atenção</span>
+                    </div>
+                </div>
+                
+                <div class="warning-box">
+                    <p><i class="fas fa-info-circle"></i> <strong>Este checklist deve ser seguido rigorosamente</strong> para garantir que todos os materiais e acessos sejam devolvidos e que a saída do colaborador ocorra de forma organizada e profissional.</p>
+                    <p><i class="fas fa-signature"></i> <strong>Ao final do preenchimento do checklist, o Gestor e RH/DP devem assinar o mesmo e arquivar na pasta do colaborador.</strong></p>
+                </div>
+
+                <div class="signature-section">
+                    <div class="signature-box">
+                        <div class="signature-line"></div>
+                        <p><strong>Gestor responsável pelo colaborador</strong></p>
+                    </div>
+                    <div class="signature-box">
+                        <div class="signature-line"></div>
+                        <p><strong>RH/DP</strong></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Informações Adicionais -->
+        <section class="policy-footer fade-in">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3><i class="fas fa-info-circle"></i> Informações da Política</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <strong>Versão:</strong> 2.0.0
+                        </div>
+                        <div class="info-item">
+                            <strong>Última Atualização:</strong> 18/01/2026
+                        </div>
+                        <div class="info-item">
+                            <strong>Próxima Revisão:</strong> 18/07/2026
+                        </div>
+                        <div class="info-item">
+                            <strong>Responsável:</strong> Departamento Pessoal
+                        </div>
+                        <div class="info-item">
+                            <strong>Aprovado por:</strong> Diretoria de RH
+                        </div>
+                        <div class="info-item">
+                            <strong>Categoria:</strong> Políticas de DP
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-actions">
+                    <a href="../../Politicas DP e RH/Checklist de Desligamento v.2 (1).pdf" download class="btn btn-primary">
+                        <i class="fas fa-download"></i> Baixar PDF
+                    </a>
+                    <button class="btn" onclick="window.print()">
+                        <i class="fas fa-print"></i> Imprimir
+                    </button>
+                    <a href="../../Fluxo emissão nota fiscal PJ/index.html#rh-dp" class="btn">
+                        <i class="fas fa-users"></i> RH e DP
+                    </a>
+                    <a href="../../Fluxo emissão nota fiscal PJ/index.html" class="btn">
+                        <i class="fas fa-home"></i> Portal Principal
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Grupo 3SA - Todos os direitos reservados</p>
+        <p>Portal de Políticas e Processos para Colaboradores</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animações ao scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.policy-section, .policy-nav, .policy-summary').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Funcionalidade dos checkboxes
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                const label = this.nextElementSibling;
+                const parent = this.closest('.checklist-item');
+                
+                if (this.checked) {
+                    parent.style.opacity = '0.7';
+                    label.style.textDecoration = 'line-through';
+                    parent.style.background = '#dcfce7';
+                    parent.style.borderColor = '#16a34a';
+                } else {
+                    parent.style.opacity = '1';
+                    label.style.textDecoration = 'none';
+                    parent.style.background = '';
+                    parent.style.borderColor = '';
+                }
+            });
+        });
+
+        // Contador de itens concluídos
+        function updateProgress() {
+            const totalItems = document.querySelectorAll('input[type="checkbox"]').length;
+            const checkedItems = document.querySelectorAll('input[type="checkbox"]:checked').length;
+            const percentage = Math.round((checkedItems / totalItems) * 100);
+            
+            console.log(`Progresso: ${checkedItems}/${totalItems} (${percentage}%)`);
+        }
+
+        // Adicionar listener para atualizar progresso
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', updateProgress);
+        });
+    </script>
+</body>
+</html>

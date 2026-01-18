@@ -84,7 +84,7 @@ const POLICIES_CONFIG = {
             shortTitle: "Reembolso",
             description: "Tratamento de prejuízos e descontos para CLT e PJ via Bitrix24",
             icon: "fas fa-coins",
-            category: "RH",
+            category: "Financeiro",
             status: "active",
             version: "1.1.0",
             lastUpdate: "2025-08-22",
@@ -121,6 +121,106 @@ const POLICIES_CONFIG = {
                     author: "RH"
                 }
             ]
+        },
+
+        "solicitacao-ferias": {
+            id: "solicitacao-ferias",
+            title: "Solicitação de Férias",
+            shortTitle: "Férias",
+            description: "Procedimentos para solicitação, aprovação e agendamento de férias",
+            icon: "fas fa-calendar-check",
+            category: "RH",
+            status: "active",
+            version: "1.0.0",
+            lastUpdate: "2026-01-18",
+            author: "Departamento de RH",
+            approvedBy: "Diretoria de RH",
+            tags: ["férias", "solicitação", "aprovação", "agendamento", "RH", "período aquisitivo", "antecedência"],
+            priority: "high",
+            viewCount: 0,
+            filePath: "../Politicas RH e DP/policies/solicitacao-ferias.html",
+            pdfPath: null,
+            imagePath: null,
+            sections: [
+                {
+                    id: "prazos-solicitacao",
+                    title: "Prazos para Solicitação",
+                    keywords: ["prazo", "antecedência", "30 dias", "60 dias", "alta demanda"]
+                },
+                {
+                    id: "documentacao",
+                    title: "Documentação Necessária",
+                    keywords: ["formulário", "aprovação", "gestor", "RH", "validação"]
+                },
+                {
+                    id: "processo-aprovacao",
+                    title: "Processo de Aprovação",
+                    keywords: ["colaborador", "gestor", "RH", "fluxo", "aprovação"]
+                },
+                {
+                    id: "periodo-aquisitivo",
+                    title: "Período Aquisitivo e Concessivo",
+                    keywords: ["12 meses", "direito", "férias", "faltas", "proporcional"]
+                }
+            ],
+            changelog: [
+                {
+                    version: "1.0.0",
+                    date: "2026-01-18",
+                    changes: ["Criação da política de solicitação de férias", "Definição de prazos e procedimentos"],
+                    author: "RH"
+                }
+            ]
+        },
+
+        "checklist-desligamento": {
+            id: "checklist-desligamento",
+            title: "Checklist de Desligamento",
+            shortTitle: "Desligamento",
+            description: "Procedimentos completos para processo de desligamento de colaboradores",
+            icon: "fas fa-clipboard-check",
+            category: "RH",
+            status: "active",
+            version: "2.0.0",
+            lastUpdate: "2026-01-18",
+            author: "Departamento Pessoal",
+            approvedBy: "Diretoria de RH",
+            tags: ["desligamento", "rescisão", "checklist", "DP", "homologação", "TRCT", "prazos legais"],
+            priority: "high",
+            viewCount: 0,
+            filePath: "../Politicas RH e DP/policies/checklist-desligamento.html",
+            pdfPath: null,
+            imagePath: null,
+            sections: [
+                {
+                    id: "tipos-desligamento",
+                    title: "Tipos de Desligamento",
+                    keywords: ["demissão", "justa causa", "pedido", "acordo mútuo", "FGTS"]
+                },
+                {
+                    id: "prazos-legais",
+                    title: "Prazos Legais",
+                    keywords: ["homologação", "1 dia útil", "10 dias", "multa", "penalidade"]
+                },
+                {
+                    id: "documentos-necessarios",
+                    title: "Documentos Necessários",
+                    keywords: ["TRCT", "carteira trabalho", "ASO", "guias", "recolhimento"]
+                },
+                {
+                    id: "checklist-dp",
+                    title: "Checklist do DP",
+                    keywords: ["cálculos", "rescisórios", "documentação", "sistemas", "eSocial"]
+                }
+            ],
+            changelog: [
+                {
+                    version: "2.0.0",
+                    date: "2026-01-18",
+                    changes: ["Atualização completa do checklist", "Inclusão de novos procedimentos legais"],
+                    author: "DP"
+                }
+            ]
         }
     },
 
@@ -133,10 +233,10 @@ const POLICIES_CONFIG = {
             description: "Políticas relacionadas a processos financeiros e pagamentos"
         },
         "RH": {
-            name: "Recursos Humanos", 
+            name: "Recursos Humanos e DP", 
             icon: "fas fa-users",
             color: "#4F46E5",
-            description: "Políticas de gestão de pessoas e processos de RH"
+            description: "Políticas de gestão de pessoas, processos de RH e Departamento Pessoal"
         },
         "Operacional": {
             name: "Operacional",

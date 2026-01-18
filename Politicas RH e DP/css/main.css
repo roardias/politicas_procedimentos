@@ -449,98 +449,6 @@ body {
     margin-top: var(--spacing-lg);
 }
 
-/* Estilos adicionais para seções de área */
-.area-section:nth-child(odd) {
-    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-    border-left: 4px solid #0ea5e9;
-}
-
-.area-section:nth-child(even) {
-    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-    border-left: 4px solid #16a34a;
-}
-
-.area-section:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
-    transition: all var(--transition-normal);
-}
-
-/* Ícones específicos por área */
-.area-section:nth-child(odd) .area-icon {
-    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
-    color: white;
-}
-
-.area-section:nth-child(even) .area-icon {
-    background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
-    color: white;
-}
-
-/* Estilos para Departamentos movidos para departments.css */
-
-/* Estilos de departamento removidos - agora em departments.css */
-
-/* Todos os estilos de departamento removidos - agora em departments.css */
-
-/* Todos os estilos de departamento removidos - agora em departments.css */
-
-/* Caixa de instrução */
-.instruction-box {
-    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-    border: 2px solid #f59e0b;
-    border-radius: var(--radius-lg);
-    padding: 1rem 1.5rem;
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    font-weight: 600;
-    color: #92400e;
-    box-shadow: var(--shadow-sm);
-}
-
-.instruction-box i {
-    font-size: 1.2rem;
-    color: #f59e0b;
-}
-
-/* Melhorar o header da seção */
-.section-header h2 {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: var(--text-primary);
-    margin-bottom: 1rem;
-}
-
-.section-header h2 i {
-    color: var(--primary-color);
-    animation: pointPulse 2s infinite;
-}
-
-@keyframes pointPulse {
-    0%, 100% {
-        transform: scale(1) translateY(0);
-    }
-    50% {
-        transform: scale(1.1) translateY(3px);
-    }
-}
-
-.section-header p {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    margin-bottom: 0;
-}
-
-.section-header p strong {
-    color: var(--primary-color);
-    font-weight: 700;
-}
-
 .policy-card {
     background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
     border-radius: var(--radius-xl);
@@ -744,7 +652,6 @@ body {
 }
 
 /* Responsividade */
-/* Responsividade para seções de área */
 @media (max-width: 768px) {
     .container {
         padding: 0 var(--spacing-sm);
@@ -787,41 +694,6 @@ body {
         flex-direction: column;
         align-items: flex-start;
     }
-    
-    /* Responsividade das seções de área */
-    .area-header {
-        flex-direction: column;
-        text-align: center;
-        gap: var(--spacing-md);
-    }
-    
-    .area-icon {
-        align-self: center;
-    }
-    
-    .area-section {
-        padding: var(--spacing-lg);
-    }
-
-    /* Responsividade dos departamentos removida - agora em departments.css */
-    
-    .instruction-box {
-        text-align: center;
-        font-size: 0.9rem;
-    }
-    
-    .section-header h2 {
-        font-size: 2rem;
-        text-align: center;
-    }
-    
-    .section-header p {
-        text-align: center;
-        font-size: 1.1rem;
-    }
-}
-
-/* Responsividade para tablets dos departamentos removida - agora em departments.css */
 }
 
 @media (max-width: 480px) {

@@ -1,0 +1,51 @@
+Política de Solicitação de Férias do Grupo 3S/A
+
+1.	Empresas / Negócios Envolvidos:
+
+●	Alldax Contabilidade
+●	Tax All Consultoria Tributária
+●	Concimed
+●	Grupo 3S/A
+
+2.	Objetivo:
+Esta política tem como objetivo estabelecer regras claras e prazos definidos para a solicitação e programação de férias, garantindo uma gestão eficiente e organizada por parte do departamento de Recursos Humanos.
+
+3.	Vigência:
+Esta política entra em vigor a partir de 01 de janeiro de 2024.
+Atualização em 16 de janeiro de 2026.
+
+4.	Procedimentos para Solicitação de Férias:
+4.1	Férias do Primeiro Semestre com gozo de 01/01 a 30/06: Os líderes devem alinhar semestralmente as datas de gozo de férias do primeiro trimestre, os pedidos de férias desse caso deverão chegar para o RH até 10 de novembro referente ao primeiro semestre do ano. 
+4.2	Férias do Primeiro Semestre com gozo de 01/07 a 31/12: Os líderes devem alinhar semestralmente as datas de gozo de férias do primeiro trimestre, os pedidos de férias desse caso deverão chegar para o RH até 10 de Abril referente ao segundo semestre do ano. 
+
+5 Possibilidades de fracionamento:
+•	As férias podem ser divididas em até três períodos.
+•	Um desses períodos de férias deve ter, obrigatoriamente, no mínimo 14 dias corridos e os demais não poderão ser menores que 5 dias.
+•	O colaborador tem a opção de "vender" até 10 dias de suas férias, ou seja, solicitar o abono de 1/3 do período concessivo de férias.
+•	O colaborador pode solicitar a antecipação do 13º salário para ser pago junto com as férias, desde que o período de gozo das férias ocorra entre fevereiro e outubro.
+•	As próximas programações de férias serão feitas para que o funcionário goze suas férias no prazo de até 90 dias  após o período aquisitivo.
+
+6.Processo de Aprovação:
+●	Os líderes após receber o do RH a relação de programação de férias, deverão realizar o planejamento das férias com seus liderados de forma semestral;
+●	O líder cria uma tarefa via Bitrix seguindo o modelo do link abaixo:
+
+https://alldax.bitrix24.com.br/rpa/
+●	Em seguida clique em solicitação de pedido de férias, depois em  +Adicionar e preencha o formulário com os dados do colaborador.
+
+7.	Comunicação entre RH e Líderes:
+
+●	A comunicação se inicia com alinhamento prévio entre líder e liderado.
+●	A segunda ação é o líder acionar o RH via tarefa no bitrix.(Via RPA, conforme orientação anterior)
+●	Todos os retornos das férias como Aviso de Férias e Recibo de Pagamento serão reportados via tarefa no bitrix.
+●	O RH irá anexar na mesma tarefa o aviso de férias que deverá ser assinado pelo líder e liderado.
+●	O recibo de pagamento das férias deverá ser assinado pelo líder do RH e liderado a ser enviado na tarefa do Bitrix.
+
+8.	Exceções:
+Em casos excepcionais, alterações ou cancelamentos de férias podem ser solicitados pelo líder da equipe diretamente ao líder do RH, justificando o motivo.
+
+9.	Relatórios Trimestrais:
+O RH enviará relatórios trimestrais aos líderes com informações sobre as datas de férias a vencer e o período aquisitivo, facilitando o planejamento e a lembrança das programações.
+
+10.Responsabilidades dos Líderes
+É responsabilidade dos líderes informar e orientar os liderados sobre esta política e os procedimentos para solicitação de férias. Os líderes devem garantir que os liderados compreendam a importância de seguir as diretrizes estabelecidas para assegurar um processo de férias organizado e justo para todos.
+

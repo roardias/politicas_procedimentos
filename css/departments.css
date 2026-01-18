@@ -1,0 +1,127 @@
+/* Estilos para Departamentos - Cards lado a lado */
+.departments-section {
+    margin: 3rem 0;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.section-header p {
+    color: #6b7280;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.departments-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 2rem !important;
+    max-width: 1200px;
+    margin: 0 auto !important;
+}
+
+.department-card {
+    background: #f8fafc !important;
+    border-radius: 12px !important;
+    padding: 2rem !important;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid #e2e8f0 !important;
+    display: block !important;
+}
+
+.department-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.department-icon {
+    font-size: 2.5rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.department-content h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+}
+
+.department-content p {
+    color: #6b7280;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.department-stats {
+    margin-bottom: 1.5rem;
+}
+
+.department-stats .stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #9ca3af;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.department-stats .stat i {
+    font-size: 0.85rem;
+}
+
+.department-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.update-status {
+    font-size: 0.9rem;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.department-link {
+    color: #3b82f6;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.department-card:hover .department-link {
+    transform: translateX(3px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .departments-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .department-card {
+        text-align: center;
+    }
+    
+    .department-footer {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}

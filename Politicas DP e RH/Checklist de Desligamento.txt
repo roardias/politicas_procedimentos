@@ -1,0 +1,96 @@
+Checklist de Desligamento
+
+1.	Comunicação do Desligamento
+1.1	Pedido pelo Colaborador:
+A.	(  ) O Gestor entrega ao RH a solicitação de desligamento do colaborador (feita de próprio punho conforme modelo orientado pelo RH).
+
+     1.2 Solicitação do Gestor:
+A. (  ) Registrar a solicitação no Bitrix como tarefa para o RH.
+         	B. (  ) O DP checa a quantidade de horas a compensar e envia para o Gestor.
+
+         1.2.1 Se houver horas positivas:
+               A. (  ) O gestor deve avaliar se é o melhor momento para efetivar o desligamento, caso não seja possível compensar as horas e as férias solicitar autorização para Eduardo e William.
+               B. (  ) O gestor deve acrescentar na tarefa os dias e horários que o colaborador irá compensar as horas e/ou período de férias antes da efetivação da rescisão (Avaliando o período de estabilidade pós férias).
+         C. (  ) O gestor deverá apurar no ato da solicitação da rescisão se o colaborador tem comissionamento ou bonificação a receber e repassar todos os cálculos com o colaborador antes de sua saída, caso o gestor não tenha os cálculos destes valores a rescisão deverá ser pausada até conclusão e tratativa junto ao colaborador. 
+               D. (  ) O DP deverá preparar o distrato do plano de saúde, para recolher a assinatura do colaborador antes de saída.          
+
+2. Devolução de Materiais e Acesso – RH
+2.1 (  ) Coletar o celular corporativo.
+2.2 (  ) Coletar o chip de telefonia.
+2.3 (  ) Coletar chaves de acesso (escritório, armários, etc.).
+2.4 (  ) Coletar controle remoto (se aplicável).
+2.5 (  ) Coletar notebook e outros equipamentos fornecidos (como mouse, teclado, etc.).
+2.6 (  ) Cancelar acesso a portas e sistemas (incluir sistemas online e físicos).
+
+3. Entrevista de Desligamento – RH
+3.1 (  ) O RH deverá agendar a entrevista de desligamento com o colaborador (Caso no dia o colaborador se recuse)
+3.2 (  ) O RH conduzirá a entrevista, coletando feedback e informações relevantes (No dia do desligamento).
+
+4. Documentação
+     4.1 (  ) Garantir que todos os materiais devolvidos sejam registrados.(Formulário de devolução)
+     4.2 (  ) Entregar a solicitação de desligamento ou o aviso para o DP.
+
+
+5. Exclusão - RH
+     5.1 (  ) Excluir todos os acessos do colaborador: 
+              5.1.1 (  ) Realizar exclusão de acesso com a M3X: conta microsoft / e-mail @g3sa, acesso ao computador e acesso ao cloud.
+              5.1.2 (  ) Realizar exclusão junto a equipe de TI: ponto Tangerino, Bitrix, rede da Alldax, acesso remoto, Dominio e demais sistemas.
+      5.2 (  ) Excluir imediatamente do TotalPass e Plano de saúde. Admitidos no plano de agosto de 2025, não tem direito à extensão.
+
+6. Acompanhamento
+       6.1 ( ) Confirmar que todas as etapas foram concluídas antes da saída oficial do colaborador.
+
+7. Dos cálculos de rescisão - DP
+     7.1 (  ) Checar se houve algum afastamento por CID F e/ou abertura de CAT, printar e deixar na pasta do colaborador. (Principalmente se houver laudo atestando a doença relacionada ao trabalho).
+7.2 (  )Verificar a data base para o desligamento.
+7.3 (  ) Confirmar se houve alguma estabilidade. Lembrando que a estabilidade de férias é a mesma quantidade de dias de gozo.
+7.4 (  ) Consultar sempre a fatura e não o site para o desconto do TotalPass e confirmar a quantidade de check in. Data de corte de 10 a 09 do próximo mês com o mínimo de 16 check independente da data de desligamento.
+7.5 (  ) 	Solicitar extrato de FGTS, verificar todos os apontamentos, lembrando dos descontos de empréstimos (calcular sempre na data de pagamento- Valdeci é um exemplo), empréstimos consignados do governo, CRC, notificação de danos causados. No home é pago 90,00 proporcionalizados aos dias do mês e só recebe VA. Em dias de compensação não desconta VT. Para descontar VA a jornada do dia precisa ser inferior a 6h11min.
+7.6 (  ) Descontar tudo na rescisão mesmo se o colaborador continuar na empresa.
+7.7 (  ) Abonar o dia do desligamento do ponto para que o colaborador não fique no prejuízo.
+7.8 ( ) Mandar para o colaborador o encaminhamento do ASO de desligamento e já marcar a homologação presencial.
+7.9 (  ) NÃO emitir carta de referência no período de experiência.
+8.0 (  ) Caso a rescisão fique com o valora a pagar a cima de R$ 3.000,00 deve ser enviado no grupo de whatsapp de cada empresa (RH – Alldax, RH – Taxall, RH – concimed, RH – áreas meio Grupo 3 AS)
+
+
+8. Do envio para o financeiro - DP
+8.1(  ) Enviar termo de rescisão e guia de GRRF quando for o caso com a maior brevidade possível (máximo 2 dias).
+
+9. Documentação
+9.1 (  ) TRCT + quitação
+9.2 (  ) Kit profissional
+9.3 (  ) Relação INSS + Discriminação das parcelas
+9.4 (  ) Ficha do empregado
+9.5 (  ) Requerimento do seguro-desemprego (quando for o caso)
+9.6 (  ) Carta de Referência- acima de 90 dias, quando solicitado pelo colaborador.
+9.7 (  ) Ponto
+
+10- Homologação
+10.1 (  ) Enviar via whatsApp e e-mail o texto de convocação (conforme modelo a baixo).
+10.2 (  ) Marcar sempre para a data de pagamento.
+10.3 (  ) Pegar assinatura nos documentos (quitação + ficha de empregado + ponto + canhoto do seguro-desemprego) com uma testemunha.
+
+
+Modelo do texto de convocação:
+
+
+
+Olá, XXXXX.
+Informamos que o termo de rescisão do seu contrato de trabalho estará disponível para assinatura no dia 22/09/2025 às 16:00hs , na sede da empresa CRS, Qd. 502, Bloco B, Loja 59, Térreo- Asa Sul- Brasília DF.
+Caso não possa comparecer, pedimos que nos avise com antecedência. A presente mensagem constitui notificação formal.
+
+
+Atenciosamente,
+Luana Gõmes
+Analista de Gente e Gestão
+
+
+Observações:
+- Este checklist deve ser seguido rigorosamente para garantir que todos os materiais e acessos sejam devolvidos e que a saída do colaborador ocorra de forma organizada e profissional, ao final do preenchimento do check list o Gestor e RH/DP devem assinar o mesmo e arquivar na pasta do colaborador. 
+
+
+
+
+____________________________________                     _____________________________________                              Gestor responsável pelo colaborador                                                                            RH/DP
+
+

@@ -13,6 +13,7 @@
     
     <!-- CSS Modular -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/departments.css">
 </head>
 <body>
     <header class="header">
@@ -43,94 +44,78 @@
             </div>
         </section>
 
-        <!-- Políticas Disponíveis -->
-        <section class="policies-section">
+        <!-- Departamentos -->
+        <section class="departments-section">
             <div class="section-header">
-                <h2>Políticas Disponíveis</h2>
-                <p>Acesse as políticas e procedimentos organizados por categoria</p>
+                <h2>Áreas de Políticas</h2>
+                <p>Selecione uma área para visualizar as políticas e procedimentos disponíveis</p>
+            </div>
+
+            <div class="departments-grid">
+                <!-- Área Financeira -->
+                <div class="department-card" onclick="showDepartmentPolicies('financeiro')">
+                    <div class="department-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="department-content">
+                        <h3>Área Financeira</h3>
+                        <p>Políticas relacionadas a processos financeiros, pagamentos e controles</p>
+                        <div class="department-stats">
+                            <span class="stat">
+                                <i class="fas fa-file-alt"></i> 3 políticas disponíveis
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-chart-line"></i> Processos financeiros
+                            </span>
+                        </div>
+                        <div class="department-footer">
+                            <span class="update-status">Atualizado recentemente</span>
+                            <a href="#" class="department-link" onclick="event.preventDefault(); showDepartmentPolicies('financeiro');">
+                                Acessar Políticas <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Área RH e DP -->
+                <div class="department-card" onclick="showDepartmentPolicies('rh-dp')">
+                    <div class="department-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="department-content">
+                        <h3>Recursos Humanos e Departamento Pessoal</h3>
+                        <p>Políticas de gestão de pessoas, processos de RH e procedimentos de DP</p>
+                        <div class="department-stats">
+                            <span class="stat">
+                                <i class="fas fa-file-alt"></i> 2 políticas disponíveis
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-user-friends"></i> Gestão de pessoas
+                            </span>
+                        </div>
+                        <div class="department-footer">
+                            <span class="update-status">Atualizado recentemente</span>
+                            <a href="#" class="department-link" onclick="event.preventDefault(); showDepartmentPolicies('rh-dp');">
+                                Acessar Políticas <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Políticas por Departamento (Oculto inicialmente) -->
+        <section class="policies-section hidden" id="policiesSection">
+            <div class="section-header">
+                <h2 id="departmentTitle">Políticas do Departamento</h2>
+                <p id="departmentDescription">Políticas disponíveis para este departamento</p>
+                <button class="btn" onclick="showDepartments()" style="margin-top: 10px;">
+                    <i class="fas fa-arrow-left"></i> Voltar aos Departamentos
+                </button>
             </div>
             
-            <div class="policies-grid">
-                <!-- Política de Emissão NF PJ -->
-                <div class="policy-card" onclick="window.location.href='policies/emissao-nf-pj.html'" style="cursor: pointer;">
-                    <div class="policy-icon">
-                        <i class="fas fa-file-invoice-dollar"></i>
-                    </div>
-                    <div class="policy-content">
-                        <h3>Emissão de Nota Fiscal PJ</h3>
-                        <p>Fluxo completo para emissão de notas fiscais de prestadores pessoa jurídica, incluindo datas, cálculos e aprovações.</p>
-                        <div class="policy-tags">
-                            <span class="tag">PJ</span>
-                            <span class="tag">Nota Fiscal</span>
-                            <span class="tag">Financeiro</span>
-                        </div>
-                        <div class="policy-stats">
-                            <span class="stat">
-                                <i class="fas fa-eye"></i> 47 visualizações
-                            </span>
-                            <span class="stat">
-                                <i class="fas fa-calendar"></i> Atualizado em 19/09/2025
-                            </span>
-                        </div>
-                        <div class="policy-link">
-                            Acessar Política <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Política de Reembolso -->
-                <div class="policy-card" onclick="window.location.href='policies/reembolso-prejuizo.html'" style="cursor: pointer;">
-                    <div class="policy-icon">
-                        <i class="fas fa-coins"></i>
-                    </div>
-                    <div class="policy-content">
-                        <h3>Reembolso de Prejuízo</h3>
-                        <p>Tratamento de prejuízos e descontos para CLT e PJ via Bitrix24, incluindo fluxo de aprovação e documentação.</p>
-                        <div class="policy-tags">
-                            <span class="tag">CLT</span>
-                            <span class="tag">PJ</span>
-                            <span class="tag">Reembolso</span>
-                        </div>
-                        <div class="policy-stats">
-                            <span class="stat">
-                                <i class="fas fa-eye"></i> 23 visualizações
-                            </span>
-                            <span class="stat">
-                                <i class="fas fa-calendar"></i> Atualizado em 22/08/2025
-                            </span>
-                        </div>
-                        <div class="policy-link">
-                            Acessar Política <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Política de Pagamentos -->
-                <div class="policy-card" onclick="window.location.href='../Politica de Pagamentos/policies/politica-pagamentos.html'" style="cursor: pointer;">
-                    <div class="policy-icon">
-                        <i class="fas fa-credit-card"></i>
-                    </div>
-                    <div class="policy-content">
-                        <h3>Política de Pagamentos</h3>
-                        <p>Diretrizes e procedimentos para solicitação, aprovação e execução de pagamentos, incluindo prazos e compliance.</p>
-                        <div class="policy-tags">
-                            <span class="tag">Pagamentos</span>
-                            <span class="tag">Aprovação</span>
-                            <span class="tag">Compliance</span>
-                        </div>
-                        <div class="policy-stats">
-                            <span class="stat">
-                                <i class="fas fa-eye"></i> 0 visualizações
-                            </span>
-                            <span class="stat">
-                                <i class="fas fa-calendar"></i> Atualizado em 19/09/2025
-                            </span>
-                        </div>
-                        <div class="policy-link">
-                            Acessar Política <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
+            <div class="policies-grid" id="policiesGrid">
+                <!-- Políticas serão carregadas dinamicamente -->
             </div>
         </section>
 
@@ -163,6 +148,39 @@
                 </div>
             </div>
         </section>
+
+        <!-- Empresas do Grupo -->
+        <section class="companies-section">
+            <div class="section-header">
+                <h2>Empresas do Grupo</h2>
+            </div>
+            <div class="companies-grid">
+                <div class="company-item">
+                    <div class="company-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Alldax Contabilidade</h3>
+                </div>
+                <div class="company-item">
+                    <div class="company-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Tax All Consultoria Tributária</h3>
+                </div>
+                <div class="company-item">
+                    <div class="company-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Concimed</h3>
+                </div>
+                <div class="company-item">
+                    <div class="company-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Grupo 3SA</h3>
+                </div>
+            </div>
+        </section>
     </div>
                     
     <footer class="footer">
@@ -172,27 +190,212 @@
 
     <!-- Scripts Modulares -->
     <script src="js/policies-config.js"></script>
+    <script src="../Politicas RH e DP/js/policies-config.js"></script>
     <script src="js/main.js"></script>
     <script>
-        // Compatibilidade com a busca personalizada
+        // Dados das políticas por departamento
+        const departmentPolicies = {
+            'financeiro': [
+                {
+                    title: 'Emissão de Nota Fiscal PJ',
+                    description: 'Fluxo completo para emissão de notas fiscais de prestadores pessoa jurídica, incluindo datas, cálculos e aprovações.',
+                    icon: 'fas fa-file-invoice-dollar',
+                    tags: ['PJ', 'Nota Fiscal', 'Financeiro'],
+                    stats: ['47 visualizações', 'Atualizado em 29/09/2025'],
+                    url: 'policies/emissao-nf-pj.html'
+                },
+                {
+                    title: 'Reembolso de Prejuízo',
+                    description: 'Tratamento de prejuízos e descontos para CLT e PJ via Bitrix24, incluindo fluxo de aprovação e documentação.',
+                    icon: 'fas fa-coins',
+                    tags: ['CLT', 'PJ', 'Reembolso'],
+                    stats: ['23 visualizações', 'Atualizado em 22/08/2025'],
+                    url: 'policies/reembolso-prejuizo.html'
+                },
+                {
+                    title: 'Política de Pagamentos',
+                    description: 'Diretrizes e procedimentos para solicitação, aprovação e execução de pagamentos, incluindo prazos e compliance.',
+                    icon: 'fas fa-credit-card',
+                    tags: ['Pagamentos', 'Aprovação', 'Compliance'],
+                    stats: ['0 visualizações', 'Atualizado em 19/09/2025'],
+                    url: '../Politica de Pagamentos/policies/politica-pagamentos.html'
+                }
+            ],
+            'rh-dp': [
+                {
+                    title: 'Solicitação de Férias',
+                    description: 'Procedimentos para solicitação, aprovação e agendamento de férias, incluindo prazos e documentação necessária.',
+                    icon: 'fas fa-calendar-check',
+                    tags: ['Férias', 'RH', 'Aprovação'],
+                    stats: ['0 visualizações', 'PDF Disponível'],
+                    url: '../Politicas RH e DP/policies/solicitacao-ferias.html'
+                },
+                {
+                    title: 'Checklist de Desligamento',
+                    description: 'Procedimentos completos para processo de desligamento de colaboradores, incluindo documentação e prazos legais.',
+                    icon: 'fas fa-clipboard-check',
+                    tags: ['Desligamento', 'DP', 'Checklist'],
+                    stats: ['0 visualizações', 'Novo'],
+                    url: '../Politicas RH e DP/policies/checklist-desligamento.html'
+                }
+            ]
+        };
+
+        // Função para mostrar políticas de um departamento
+        function showDepartmentPolicies(department) {
+            const departmentsSection = document.querySelector('.departments-section');
+            const searchSection = document.querySelector('.search-section');
+            const policiesSection = document.getElementById('policiesSection');
+            const departmentTitle = document.getElementById('departmentTitle');
+            const departmentDescription = document.getElementById('departmentDescription');
+            const policiesGrid = document.getElementById('policiesGrid');
+
+            // Ocultar seção de departamentos e busca
+            departmentsSection.style.display = 'none';
+            searchSection.style.display = 'none';
+            
+            // Mostrar seção de políticas
+            policiesSection.classList.remove('hidden');
+
+            // Configurar título e descrição
+            if (department === 'financeiro') {
+                departmentTitle.textContent = 'Políticas da Área Financeira';
+                departmentDescription.textContent = 'Políticas relacionadas a processos financeiros, pagamentos e controles';
+            } else if (department === 'rh-dp') {
+                departmentTitle.textContent = 'Políticas de RH e Departamento Pessoal';
+                departmentDescription.textContent = 'Políticas de gestão de pessoas, processos de RH e procedimentos de DP';
+            }
+
+            // Carregar políticas
+            const policies = departmentPolicies[department] || [];
+            policiesGrid.innerHTML = policies.map(policy => `
+                <div class="policy-card" onclick="window.location.href='${policy.url}'" style="cursor: pointer;">
+                    <div class="policy-icon">
+                        <i class="${policy.icon}"></i>
+                    </div>
+                    <div class="policy-content">
+                        <h3>${policy.title}</h3>
+                        <p>${policy.description}</p>
+                        <div class="policy-tags">
+                            ${policy.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        </div>
+                        <div class="policy-stats">
+                            ${policy.stats.map(stat => `
+                                <span class="stat">
+                                    <i class="fas fa-${stat.includes('visualizações') ? 'eye' : stat.includes('PDF') ? 'file-pdf' : 'calendar'}"></i> ${stat}
+                                </span>
+                            `).join('')}
+                        </div>
+                        <div class="policy-link">
+                            Acessar Política <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            // Scroll para o topo
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Função para voltar aos departamentos
+        function showDepartments() {
+            const departmentsSection = document.querySelector('.departments-section');
+            const searchSection = document.querySelector('.search-section');
+            const policiesSection = document.getElementById('policiesSection');
+
+            // Mostrar seção de departamentos e busca
+            departmentsSection.style.display = 'block';
+            searchSection.style.display = 'block';
+            
+            // Ocultar seção de políticas
+            policiesSection.classList.add('hidden');
+
+            // Limpar resultados de busca
+            const searchResults = document.getElementById('searchResults');
+            const searchInput = document.getElementById('searchInput');
+            if (searchResults) searchResults.innerHTML = '';
+            if (searchInput) searchInput.value = '';
+
+            // Scroll para o topo
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Função para remover acentos
+        function removeAccents(str) {
+            return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        // Base de dados das políticas para busca
+        const allPolicies = [
+            // Políticas Financeiras
+            {
+                title: 'Emissão de Nota Fiscal PJ',
+                description: 'Fluxo completo para emissão de notas fiscais de prestadores pessoa jurídica, incluindo datas, cálculos e aprovações.',
+                icon: 'fas fa-file-invoice-dollar',
+                tags: ['PJ', 'Nota Fiscal', 'Financeiro'],
+                filePath: 'policies/emissao-nf-pj.html',
+                keywords: 'emissão nota fiscal PJ pessoa jurídica prestador serviço cálculo aprovação financeiro pagamento'
+            },
+            {
+                title: 'Reembolso de Prejuízo',
+                description: 'Tratamento de prejuízos e descontos para CLT e PJ via Bitrix24, incluindo fluxo de aprovação e documentação.',
+                icon: 'fas fa-coins',
+                tags: ['CLT', 'PJ', 'Reembolso'],
+                filePath: 'policies/reembolso-prejuizo.html',
+                keywords: 'reembolso prejuízo desconto CLT PJ bitrix24 aprovação documentação financeiro'
+            },
+            {
+                title: 'Política de Pagamentos',
+                description: 'Diretrizes e procedimentos para solicitação, aprovação e execução de pagamentos, incluindo prazos e compliance.',
+                icon: 'fas fa-credit-card',
+                tags: ['Pagamentos', 'Aprovação', 'Compliance'],
+                filePath: '../Politica de Pagamentos/policies/politica-pagamentos.html',
+                keywords: 'política pagamentos solicitação aprovação execução prazos compliance financeiro'
+            },
+            // Políticas RH e DP
+            {
+                title: 'Solicitação de Férias',
+                description: 'Procedimentos para solicitação, aprovação e agendamento de férias, incluindo prazos e documentação necessária.',
+                icon: 'fas fa-calendar-check',
+                tags: ['Férias', 'RH', 'Aprovação'],
+                filePath: '../Politicas RH e DP/policies/solicitacao-ferias.html',
+                keywords: 'solicitação férias aprovação agendamento prazos documentação RH período aquisitivo'
+            },
+            {
+                title: 'Checklist de Desligamento',
+                description: 'Procedimentos completos para processo de desligamento de colaboradores, incluindo documentação e prazos legais.',
+                icon: 'fas fa-clipboard-check',
+                tags: ['Desligamento', 'DP', 'Checklist'],
+                filePath: '../Politicas RH e DP/policies/checklist-desligamento.html',
+                keywords: 'checklist desligamento rescisão colaboradores documentação prazos legais DP homologação TRCT'
+            }
+        ];
+
+        // Função de busca melhorada
         function performSearch() {
-            const query = document.getElementById('searchInput').value.toLowerCase();
+            const query = document.getElementById('searchInput').value.trim();
             const resultsDiv = document.getElementById('searchResults');
             
-            if (!query.trim()) {
+            if (!query) {
                 resultsDiv.innerHTML = '';
                 return;
             }
             
-            // Usar a função global do sistema existente
-            const results = typeof searchPolicies === 'function' ? searchPolicies(query) : [];
+            // Normalizar query (sem acentos e minúscula)
+            const normalizedQuery = removeAccents(query.toLowerCase());
+            
+            // Buscar nas políticas
+            const results = allPolicies.filter(policy => {
+                const searchText = removeAccents(`${policy.title} ${policy.description} ${policy.keywords} ${policy.tags.join(' ')}`).toLowerCase();
+                return searchText.includes(normalizedQuery);
+            });
             
             if (results.length > 0) {
                 resultsDiv.innerHTML = `
-                    <h3>Resultados encontrados:</h3>
+                    <h3>Resultados encontrados (${results.length}):</h3>
                     <div class="search-results-grid">
                         ${results.map(result => `
-                            <div class="search-result-item" onclick="window.location.href='${result.filePath}'">
+                            <div class="search-result-item" onclick="window.location.href='${result.filePath}'" style="cursor: pointer;">
                                 <div class="result-icon">
                                     <i class="${result.icon}"></i>
                                 </div>
@@ -200,7 +403,7 @@
                                     <h4>${result.title}</h4>
                                     <p>${result.description}</p>
                                     <div class="result-tags">
-                                        ${result.tags ? result.tags.slice(0, 3).map(tag => `<span class="tag">${tag}</span>`).join('') : ''}
+                                        ${result.tags.slice(0, 3).map(tag => `<span class="tag">${tag}</span>`).join('')}
                                     </div>
                                 </div>
                             </div>
@@ -208,7 +411,13 @@
                     </div>
                 `;
             } else {
-                resultsDiv.innerHTML = '<p>Nenhum resultado encontrado. Tente palavras como: PJ, nota fiscal, reembolso, pagamentos.</p>';
+                resultsDiv.innerHTML = `
+                    <div style="text-align: center; padding: 2rem; color: #6b7280;">
+                        <i class="fas fa-search" style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.3;"></i>
+                        <p>Nenhum resultado encontrado para "<strong>${query}</strong>"</p>
+                        <p style="font-size: 0.9rem; margin-top: 1rem;">Tente palavras como: férias, desligamento, nota fiscal, reembolso, pagamentos</p>
+                    </div>
+                `;
             }
         }
         
@@ -228,6 +437,11 @@
                         document.getElementById('searchResults').innerHTML = '';
                     }
                 });
+            }
+            
+            // Verificar se há hash na URL para abrir seção específica
+            if (window.location.hash === '#rh-dp') {
+                showDepartmentPolicies('rh-dp');
             }
         });
     </script>
